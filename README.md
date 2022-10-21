@@ -1,8 +1,8 @@
-# Welcome to [DennisIvy.com](https://www.dennisivy.com/)
+# Приветствуем Вас на сайта [Аавтоюрист Сургут](https://.avtourist-surgut.ru)
 
-My personal website re-built With [Astro](https://astro.build).
+Наше приложение создано с помощью технологии [Astro](https://astro.build).
 
-This is a simple static site that I will use for blogging.
+Это простой статический сайт, который я буду использовать для ведения блога.
 
 <img style="max-width:500px" src="public/images/preview.PNG">
 
