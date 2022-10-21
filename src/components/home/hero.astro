@@ -1,0 +1,34 @@
+---
+import admin from '../../images/home/admin.jpg'
+---
+
+<section id="wrapper--hero" class="section--page">
+  <img id="profile-pic" src={admin}/>
+  <div>
+    <h1 id="user-name">Автоюрист Сургут</h1>
+    <p>Лишаю водительских прав ? Попали в ДТП ?
+      Не можете поставить на учет автомобиль ?
+      Проблемы с ГИБДД ? Спор со страховой компанией ?   Звоните ... Консультации бесплатно ... 
+    </p>
+  </div>  
+</section>
+
+<style>
+  h1{
+    font-size: 3em;
+    line-height: 0;
+  }
+  
+	@media (max-width: 767px) {			
+		h1 {
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 767px) {			
+		p {			
+			text-align: center;
+		}
+	}
+</style>

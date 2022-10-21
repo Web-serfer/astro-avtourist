@@ -1,0 +1,67 @@
+---
+import '../styles/blog/globals.css'
+
+import Header from '../components/blog/Header.astro'
+import SearchPanel from '../components/blog/SearchPanel.astro'
+import ButtonArrow from '../components/blog/ButtonArrow.astro'
+import FooterWidget from '../components/blog/FooterWidget.astro'
+import Footer from '../components/blog/Footer.astro'
+
+export interface Props {
+	title?: string;
+   
+}
+
+const { title } = Astro.props;
+---
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <title>{title}</title>
+   <meta name='description' content='Blog'>
+   
+   <link rel="canonical" href="#">
+
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+   <!-- Ionicons -->
+   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+   <Header />
+   <SearchPanel />
+      <main class="content" aria-label="Content">
+         <slot />
+      </main>
+   <ButtonArrow />  
+   <FooterWidget />
+   <Footer />
+
+<!-- Scripts -->
+<script src="../scripts/jquery-3.5.1.min.js"></script>
+<script src="../scripts/simply-jekyll-search.js"></script>
+<script src="../scripts/jquery.fitvids.js"></script>
+<script src="../scripts/lazyload.min.js"></script>
+
+<!-- <script src="../scripts/transition.js"></script> -->
+<!-- <script src="../scripts/zoom.min.js"></script> -->
+<!-- <script src="../scripts/common.js"></script> -->
+</body>
+</html>
+
+<script>
+   var base_url = "/",
+      pagination_next_url = base_url + '/page2',
+      pagination_next_page_number = '2',
+      pagination_available_pages_number = '2';
+</script>
+

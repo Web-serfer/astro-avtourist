@@ -1,0 +1,174 @@
+<div class="navigation">
+  <div class="top-nav">
+    <ul class="nav__list list-reset">
+      <li class="nav__item">
+        <a href="/" class="nav__link">Главная</a>
+      </li>  
+      <li class="nav__item">
+        <a href="/blog" class="nav__link">Блог</a>
+      </li>     
+      <li class="nav__item">
+        <a href="/documents" class="nav__link">Документы</a>
+      </li>
+      <li class="nav__item">
+        <a href="/about" class="nav__link">Об Автоюристе</a>
+      </li>              
+    </ul>
+  </div>
+</div>
+<div class="nav-buttons">
+  <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+  <div class="search-button">
+     <i class="nav__icon nav__icon-search ion ion-md-search"></i>
+     <span>Поиск</span>
+  </div>
+</div>
+
+<!-- Styles component -->
+<style>  
+  .navigation{
+  display:flex;
+  align-items:center;
+}
+
+  .top-nav .nav__list .nav__item{
+    display:inline-block;
+    margin-right:40px;
+  }
+
+  .top-nav .nav__list .nav__item:last-child{
+    margin-right:0;
+  }
+
+  .top-nav .nav__list .nav__item .nav__link{
+    position:relative;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#eee;
+  }
+  .top-nav .nav__list .nav__item .nav__link:hover{
+    color:#ff7b7b;
+  }
+
+  @media only screen and (max-width: 992px){
+    .top-nav{
+        display:none;
+    }
+  }
+
+  .mobile-nav .nav__list .nav__item{
+    display:block;
+    margin-bottom:36px;
+    text-align:center;
+  }
+
+  .mobile-nav .nav__list .nav__item:last-child{
+    margin-bottom:0
+  }
+
+  .mobile-nav .nav__list .nav__item .nav__link{
+    position:relative;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#eee;
+  }
+
+  .mobile-nav .nav__list .nav__item .nav__link:hover{
+    color:#ff7b7b;
+  }
+
+  @media only screen and (max-width: 576px){
+    .mobile-nav .nav__list .nav__item{
+        margin-bottom:28px;
+    }
+  }
+
+  .nav-buttons{
+    display:flex;
+    align-items:center;
+    font-size:24px;
+    color:#eee;
+  }
+
+  .nav-buttons .search-button{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    transition:all 0.2s;
+  }
+
+  .nav-buttons .search-button span{
+    transition:all 0.2s;
+  }
+
+  .nav-buttons .search-button:hover span{
+    color:#ff7b7b;
+  }
+
+  .nav-buttons .search-button span{
+    display:block;
+    margin-left:8px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+  }
+
+  @media only screen and (max-width: 992px){
+    .nav-buttons .search-button span{
+        display:none;
+    }
+  }
+
+  .nav-buttons .nav__icon-menu{
+    display:none;
+    margin-right:16px;
+  }
+
+  @media only screen and (max-width: 992px){
+    .nav-buttons .nav__icon-menu{
+        display:block;
+    }
+  }
+
+  .nav-buttons .nav__icon{
+    cursor:pointer;
+  }
+
+  .menu-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:100;
+    opacity:0;
+    visibility:hidden;
+    background-color:#09080f;
+    transition:all 0.5s ease-in-out
+  }
+
+  .menu-overlay.is-open{
+    opacity:1;
+    visibility:visible;
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
+    .menu-overlay{
+      -webkit-backdrop-filter:saturate(180%) blur(24px);
+      backdrop-filter:saturate(180%) blur(24px);
+      background-color:rgba(9,8,15,0.9);
+    }
+  }
+
+  @media only screen and (min-width: 992px){
+    .menu-overlay{
+        display:none;
+    }
+  }  
+</style>
