@@ -1,11 +1,12 @@
 ---
-title: Startups & Projects I'm Watching
-slug: fast-api-crud
-date: 2022-9-28
-author: Dennis Ivy
+title: Мой первый пост
+slug: my-first-post
+date: 23 октября 2022
+author: Автоюрист Сургут
 read_time: 1
-tags: []
+tags: [Протокол, Постановление]
 order: 1
+hero: ./images/foi-dashboard.jpg
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
-import img100 from "../../images/blog/footer_img/100.jpg";
-import img110 from "../../images/blog/footer_img/110.jpg";
-import author from "../../images/blog/articles/author.jpg";
+import img100 from "../../images/blog/footer_img/100.jpg"
+import img110 from "../../images/blog/footer_img/110.jpg"
+import admin from '../../images/home/admin.jpg'
 ---
 
 <section class="footer-widgets">
@@ -43,7 +43,7 @@ import author from "../../images/blog/articles/author.jpg";
                       class="article__author-image lazy loaded"
                       alt="author"
                       data-ll-status="loaded"
-                      src={author}
+                      src={admin}
                     />
                   </a>
                 </div>
@@ -87,7 +87,7 @@ import author from "../../images/blog/articles/author.jpg";
                       class="article__author-image lazy loaded"
                       alt="author"
                       data-ll-status="loaded"
-                      src={author}
+                      src={admin}
                     />
                   </a>
                 </div>
@@ -209,6 +209,10 @@ import author from "../../images/blog/articles/author.jpg";
     }
   }
 
+  .recent-posts__title a:hover{
+    color: #0da2b8;
+  }
+
   .recent-posts__image{
     position:relative;
     display:block;
@@ -248,6 +252,15 @@ import author from "../../images/blog/articles/author.jpg";
   .recent-posts__content .article__author-image{
     width:28px;
     height:28px;
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 3px;
+    margin-right: 8px;
+    border: 2px solid #0da2b8;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   .tag__cloud{

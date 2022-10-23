@@ -12,9 +12,6 @@ import EventPreview from '../components/home/EventPreview.astro'
 
 import ArticlePreview from '../components/home/ArticlePreview.astro'
 
-
-
-
 import Winners from '../components/home/Winners.astro'
 
 
@@ -44,7 +41,7 @@ events = events.filter((event) => !event.frontmatter.draft);
 	<HomeVideo />
 	<section class="section--page">
 		<a id="events"></a>
-		<h3>Предстоящие события</h3>
+		<h3>Скоро на сайте</h3>
 	
 		{events.map(event => (
 			<EventPreview frontmatter={event.frontmatter}/>
@@ -55,7 +52,7 @@ events = events.filter((event) => !event.frontmatter.draft);
 	
 	<section class="section--page">
 		<a id="blog"></a>
-		<h3>Последние публикации</h3>
+		<h3>Последние статьи</h3>
 
 		{posts.map(post => (
 			<ArticlePreview frontmatter={post.frontmatter}/>
@@ -63,9 +60,4 @@ events = events.filter((event) => !event.frontmatter.draft);
 	</section>
 	<Winners/>
 </Layout>
-
-<style>
-	
-
-</style>
 

@@ -1,10 +1,10 @@
 ---
-title: WordPress Vs Hand Coding
-slug: wordpress-or-django
-date: 2020-9-25
-author: Dennis Ivy
-read_time: 4
-tags: [Django, Wordpress]
+title: Мой третий пост
+slug: my-third-post
+date: 24 октября 2022
+author: Автоюрист Сургут
+read_time: 1
+tags: [Протокол, Постановление]
 order: 3
 hero: https://dennisivy-personal.s3.amazonaws.com/images/wordpress_or_django.jpg
 draft: false

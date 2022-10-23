@@ -1,11 +1,11 @@
 ---
-title: 5 things that ranked my website fast
-slug: SEO-tricks-that-ranked-website
-date: 2020-10-2
-author: Dennis Ivy
-read_time: 5
-tags: [Django, Wordpress]
-order: 3
+title: Мой второй пост
+slug: my-second-post
+date: 24 октября 2022
+author: Автоюрист Сургут
+read_time: 1
+tags: [Протокол, Постановление]
+order: 2
 hero: https://dennisivy-personal.s3.amazonaws.com/images/Seo_thumbnail4.jpg
 draft: false
 ---

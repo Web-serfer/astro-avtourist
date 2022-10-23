@@ -1,11 +1,11 @@
 ---
-title: Laboratory Management System
-slug: laboratory-management-system
-date: 2020-6-30
-author: Dennis Ivy
+title: Мой четвертый пост
+slug: my-fourth-post
+date: 26 октября 2022
+author: Автоюрист Сургут
 read_time: 1
-tags: [Django]
-order: 3
+tags: [Протокол, Постановление]
+order: 4
 hero: ./images/foi-dashboard.jpg
 draft: false
 ---

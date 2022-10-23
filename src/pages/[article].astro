@@ -1,5 +1,6 @@
 ---
 import ArticleLayout from '../layouts/ArticleLayout.astro';
+import { Calendar} from 'react-feather';
 
 export async function getStaticPaths() {
     const articles = await Astro.glob('./posts/*.{md,mdx}')
@@ -18,22 +19,35 @@ export async function getStaticPaths() {
 const {Content, frontmatter} = Astro.props.article
 ---
 
-<ArticleLayout title={frontmatter.title}>
-    
+<ArticleLayout title={frontmatter.title}>    
     
     {frontmatter.hero && 
     <img src={frontmatter.hero}/>
     <br>
-    }
-    
-    <a href="https://twitter.com/dennisivy11" target="_blank">
-    <strong>
-        
-        By {frontmatter.author}
-       
-    </strong>
-     </a>    
-    <p>📆 Posted on {frontmatter.date}</p>
+    }    
+         
+    <p class="date">
+      <Calendar size={30}/>
+       <span> Дата публикации: {frontmatter.date}</span>
+    </p> 
+    <a href="/about" class="author">                 
+      автор: <span>{frontmatter.author}</span>
+    </a>      
     <h1>{frontmatter.title}</h1>
-    <Content/>
+    <Content/>    
 </ArticleLayout>
+
+<style>
+
+  .author span{
+    text-decoration: underline;
+  }
+  .date {
+    display: flex;
+    
+  }
+  .date span {
+    margin-left: 10px;
+    font-style: italic;
+  }
+</style>
