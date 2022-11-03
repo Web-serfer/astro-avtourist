@@ -6,7 +6,7 @@ import admin from '../../images/home/admin.jpg'
   <img id="profile-pic" src={admin}/>
   <div>
     <h1 id="user-name" class="py-10">Автоюрист Сургут</h1>
-    <p>Лишаю водительских прав ? Попали в ДТП ?
+    <p class="pr-2">Лишаю водительских прав ? Попали в ДТП ?
       Не можете поставить на учет автомобиль ?
       Проблемы с ГИБДД ? Спор со страховой компанией ?   Звоните ... Консультации бесплатно ... 
     </p>
@@ -14,6 +14,14 @@ import admin from '../../images/home/admin.jpg'
 </section>
 
 <style>
+  #profile-pic{
+    box-sizing: content-box;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
   h1{
     font-size: 3em;
     line-height: 0;

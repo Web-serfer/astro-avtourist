@@ -5,7 +5,7 @@ import { Play } from 'react-feather'
 
 <section class="section--page course-preview">
   <div class='course-preview-image-border'>
-    <a href="https://dennisivy.teachable.com/p/django-beginners-course" target="_blank">
+    <a href="#" target="_blank">
         <img class='course-preview-image' src={HeroVideo} />
     </a>
   </div>
@@ -18,3 +18,27 @@ import { Play } from 'react-feather'
     </a>
   </div>
 </section>
+
+<style>
+  .btn{
+  border: 1px solid var(--mainBorderColor);
+  color: var(--secondaryTextColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap:5px;
+  width: fit-content;
+}
+
+.btn:hover{
+  border-color:var(--mainLinkColor);
+  transition: all .5s ease 0s;
+}
+
+.btn--md{
+  font-size: .9em;
+}
+
+</style>
