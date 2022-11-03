@@ -25,14 +25,13 @@ const {Content, frontmatter} = Astro.props.article
     <img src={frontmatter.hero}/>
     <br>
     }    
-         
+    <a href="/about" class="author">                 
+      автор: <span>{frontmatter.author}</span>
+    </a>    
     <p class="date">
       <Calendar size={30}/>
        <span> Дата публикации: {frontmatter.date}</span>
-    </p> 
-    <a href="/about" class="author">                 
-      автор: <span>{frontmatter.author}</span>
-    </a>      
+    </p>          
     <h1>{frontmatter.title}</h1>
     <Content/>    
 </ArticleLayout>
