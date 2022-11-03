@@ -1,9 +1,9 @@
 ---
-title: October Hackathon 🎃  API Edition
+title: Административный протокол
 slug: october-hackathon
 date: 2022-10-3
-author: Dennis Ivy
-read_time: 1
+author: Автоюрист Сургут
+descr: Подробная инструкция по заполнению
 tags: []
 order: 2
 draft: false

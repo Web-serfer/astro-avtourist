@@ -41,7 +41,7 @@ events = events.filter((event) => !event.frontmatter.draft);
 	<HomeVideo />
 	<section class="section--page">
 		<a id="events"></a>
-		<h3>Скоро на сайте</h3>
+		<h3>Новое видео</h3>
 	
 		{events.map(event => (
 			<EventPreview frontmatter={event.frontmatter}/>
