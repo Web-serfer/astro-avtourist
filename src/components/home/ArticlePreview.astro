@@ -2,7 +2,7 @@
 
 
 const {frontmatter} = Astro.props;
-import { FileText, ArrowRight, Calendar} from 'react-feather';
+import { FileText, ArrowRight} from 'react-feather';
 ---
 
 <a href={`/${frontmatter.slug}`}>
@@ -14,7 +14,7 @@ import { FileText, ArrowRight, Calendar} from 'react-feather';
             <div>
               <strong>{frontmatter.title}</strong>
               <br/>
-              <small>{frontmatter.read_time} мин. чтения</small>
+              <small>{frontmatter.descr}</small>
               <!-- <small>{frontmatter.tags.map(tag => (
                 <span>{tag} {frontmatter.tags[frontmatter.tags.length-1] != tag && ','} </span>
               ))}</small> -->

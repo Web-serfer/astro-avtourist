@@ -22,7 +22,7 @@ const {Content, frontmatter} = Astro.props.article
 <ArticleLayout title={frontmatter.title}>    
     
     {frontmatter.hero && 
-    <img src={frontmatter.hero}/>
+    <img class="pt-8" src={frontmatter.hero}/>
     <br>
     }    
     <a href="/about" class="author">                 
@@ -32,7 +32,7 @@ const {Content, frontmatter} = Astro.props.article
       <Calendar size={30}/>
        <span> Дата публикации: {frontmatter.date}</span>
     </p>          
-    <h1>{frontmatter.title}</h1>
+    <h1 class="py-8">Тема: {frontmatter.title}</h1>
     <Content/>    
 </ArticleLayout>
 
