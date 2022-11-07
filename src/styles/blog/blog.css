@@ -105,7 +105,8 @@ small {
 }
 
 .post {
-  background-color: hsl(var(--bkg));
+  background-color: #1b1c1d;
+  /* background-color: hsl(var(--bkg)); */
   border-radius: var(--radius--lg);
   padding: var(--lg);  
   box-shadow: 6px 6px 4px 2px rgba(214, 224, 232, 0.2);
@@ -135,6 +136,7 @@ small {
 .post__date {
   font-size: .75rem;  
   text-transform: uppercase;
+  color: #fff;
 }
 
 
@@ -173,6 +175,7 @@ small {
 
 .post__author--name {
   font-size: 1rem;
+  color: #fff;
 }
 
 .post__author--avatar {
@@ -194,6 +197,7 @@ small {
   text-overflow: ellipsis;
   font-size: var(--xsm);
   font-style: italic;
+  color: #fff;
 }
 
 .btn {
