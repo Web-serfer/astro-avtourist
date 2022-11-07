@@ -2,6 +2,7 @@
 import '../styles/home/main.css'
 import '../styles/home/article.css'
 import NavBar from '../components/home/NavBar.astro'
+import Footer from '../components/home/Footer.astro'
 
 
 export interface Props {
@@ -26,5 +27,6 @@ const { title } = Astro.props;
 		<section class='container--main article--container'>
 			<slot />
 		</section>
+		<Footer />
 	</body>
 </html>

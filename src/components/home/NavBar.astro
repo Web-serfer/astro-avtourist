@@ -1,4 +1,4 @@
-<nav class="bg-[#18191a] py-6">
+<nav  class="bg-[#18191a] py-6 sticky top-0">
     <a href="/">
         <img id="logo" src="/logo.png" />
     </a>
@@ -10,6 +10,7 @@
     </div>
     <div></div>    
 </nav>
+
 
 
 <style>  
@@ -48,26 +49,29 @@
 
   @media (max-width: 767px) {			
     #menu--container {
-        margin-top: 20px;
+      margin-top: 20px;
     }
 	}
 
-  @media (max-width: 575px) {		
+  @media (max-width: 575px) {
     .link {
-      font-size: .65em;
+      font-size: .56em;
+      
     }
 	}
-
-  @media (max-width: 365px) {		
-    .link {
-      font-size: .6em;
-    }
-	}
+  
 
   nav a {
     margin: 0 1em;
     text-transform: uppercase;
   }
+
+  @media (max-width: 575px) {
+    nav a {
+      margin: 0 .5em;
+      
+    }
+	}
   
   nav a:hover{
     color: #0da2b8;
