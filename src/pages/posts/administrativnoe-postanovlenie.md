@@ -2,7 +2,7 @@
 title: Административное постановление
 slug: administrativnoe-postanovlenie
 date: 26 октября 2022
-author: Автоюрист Сургут
+author: Автоюрист
 descr: Правовая характеристика
 tags: [Протокол]
 order: 4
@@ -45,7 +45,7 @@ draft: false
 <br>
 <p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
 
-<img class='py-8' src="./images/jsoncrack.png"/>
+<img class="py-8" src="./images/jsoncrack.png"/>
 
 Website: <a href="https://jsoncrack.com/" target="_blank">jsoncrack.com</a>
 
@@ -57,7 +57,7 @@ Found project via <a href="https://www.linkedin.com/posts/vikasyadav94_vscode-pr
 Maybe it's just a cool looking feature without a practical use case, I don't know, but after seeing this <a href="https://www.linkedin.com/feed/update/urn:li:activity:6979199986219544576?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6979199986219544576%29" target_="blank">video</a> can you honestly say you're not impressed?
 
 
-<img class='py-8'   src="./images/clipdrop.gif" />
+<img class='py-8' src="./images/clipdrop.gif" />
 
 
 I'll be looking more into this and seeing if it really is as cool as it seems.

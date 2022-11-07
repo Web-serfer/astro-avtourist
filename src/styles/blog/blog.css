@@ -162,9 +162,7 @@ small {
 }
 
 .post__header a:is(:hover, :focus) {
-  color: hsl(var(--text) /.9);
-  text-decoration: underline;
-  
+  color: hsl(var(--text) /.9);  
 }
 
 .post__author {
@@ -212,6 +210,7 @@ small {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
+  
 }
 
 .btn--view {
@@ -222,6 +221,7 @@ small {
 .btn:is(:hover, :focus) {
   background-color: hsl(var(--accent1));
   box-shadow: none;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
