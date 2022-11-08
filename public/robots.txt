@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /documents/
+Disallow: /pdd/
+Disallow: /404.
+
+
+Host: avtourist-surgut.ru
+Sitemap: https://avtourist-surgut.ru/sitemap.xml
