@@ -1,4 +1,5 @@
 
+
 *,
 *::after,
 *::before {
@@ -42,7 +43,7 @@ input::placeholder {
 }
 
 
-body {  
+body {   
   background: #131415;
   color: hsl(var(--text));
   margin: var(--xlg) var(--lg);
