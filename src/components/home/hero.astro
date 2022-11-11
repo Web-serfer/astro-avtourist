@@ -2,8 +2,8 @@
 import admin from '../../images/home/admin.jpg'
 ---
 
-<section id="wrapper--hero" class="section--page">
-  <img id="profile-pic" src={admin}/>
+<section class="wrapper--hero" class="section--page">
+  <img class="admin" src={admin}/>
   <div>
     <h1 id="user-name" class="py-10">Автоюрист Сургут</h1>
     <p class="pr-2">Лишаю водительских прав ? Попали в ДТП ?
@@ -14,7 +14,20 @@ import admin from '../../images/home/admin.jpg'
 </section>
 
 <style>
-  #profile-pic{
+  .wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+  
+  @media (max-width: 600px) {
+    .wrapper--hero {
+      padding-top: 1em;
+      gap: 1em;
+    }
+  }
+
+  .admin{
     box-sizing: content-box;
     width: 150px;
     height: 150px;
@@ -34,10 +47,8 @@ import admin from '../../images/home/admin.jpg'
 			font-size: 2em;
 			text-align: center;
 		}
-	}
 
-	@media (max-width: 767px) {			
-		p {			
+    p {			
 			text-align: center;
 		}
 	}

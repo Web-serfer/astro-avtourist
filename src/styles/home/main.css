@@ -26,11 +26,11 @@
 }
 
 *{
-    font-family: 'Roboto Mono', monospace;
-    line-height: 1.8em;
-    box-sizing: border-box;
-    color: var(--mainTextColor);
-    scroll-behavior: smooth;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.8em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+  scroll-behavior: smooth;
 }
 
 body{
@@ -54,8 +54,8 @@ h4{
 
 
 p, span,small,  li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
+  color: var(--secondaryTextColor);
+  font-size: 1em;
 }
 
 small{
@@ -73,14 +73,14 @@ li{
 }
 
 .container--main{
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 
 }
 
 .section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .line-break{
@@ -88,22 +88,8 @@ li{
   height: 1px;
 }
 
-#wrapper--hero{
-    display: flex;
-    align-items: center;
-    gap: 4em;
-}
-
-#bio, a{
-    font-weight: 300;
-}
-
-
-
-
-
 #email{
-    color: var(--mainTextColor);
+  color: var(--mainTextColor);
 }
 
 
@@ -128,8 +114,6 @@ li{
   border-radius: 10px;
   border: 1px solid var(--mainBorderColor);
 }
-
-
 
 
 .card--article-preview{
@@ -211,20 +195,16 @@ blockquote{
   }
   
 
-  #wrapper--hero{
-      display: flex;
-      align-items: center;
-      gap: 1em;
-      flex-direction: column;
+  .wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
   }
-
-  #github--logo{
-    display: none;
-  }
-
-  #profile-pic{
-      width: 200px;
-      height: 200px;
+  
+  .admin{
+    width: 200px;
+    height: 200px;
   }
 
   .course-preview{
