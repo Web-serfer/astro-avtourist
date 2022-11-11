@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/ArticleLayout.astro"
 title: Мой второй пост
 slug: my-second-post
 date: 24 октября 2022

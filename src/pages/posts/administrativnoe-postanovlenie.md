@@ -6,7 +6,7 @@ author: Автоюрист
 descr: Правовая характеристика
 tags: [Протокол]
 order: 4
-hero: ./images/foi-dashboard.jpg
+hero: "./images/foi-dashboard.jpg"
 draft: false
 ---
 
