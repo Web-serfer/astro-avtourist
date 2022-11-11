@@ -1,6 +1,6 @@
 <nav  class="bg-[#18191a] py-6 sticky top-0">
     <a href="/">
-        <img id="logo" src="/logo.png" />
+      <img id="logo" src="/logo.png" />
     </a>
     <div id="menu--container">
         <a class="link" href="/">Главная</a>
@@ -13,7 +13,7 @@
 
 
 
-<style>  
+<style> 
   #logo {
     width: 50px;
   }
@@ -37,41 +37,37 @@
 		}
 	}
 
-  @media (min-width: 575px) {			
+  @media (max-width: 575px) {			
 		h1{
 			font-size: .2em;
 		}
+
+    .link {
+      font-size: .69em;     
+      
+    }
+
+    nav a {
+      margin: 0 .5em;
+      font-size: .7em;      
+    }
 	}
 
   #menu--container{
-    display: flex;
+    display: flex;    
   }
 
   @media (max-width: 767px) {			
     #menu--container {
       margin-top: 20px;
     }
-	}
-
-  @media (max-width: 575px) {
-    .link {
-      font-size: .56em;
-      
-    }
-	}
-  
+	}  
 
   nav a {
     margin: 0 1em;
     text-transform: uppercase;
   }
 
-  @media (max-width: 575px) {
-    nav a {
-      margin: 0 .5em;
-      
-    }
-	}
   
   nav a:hover{
     color: #6482c2;

@@ -1,42 +1,33 @@
 ---
 import "../../styles/blog/blog.css"
+import Layout from '../../layouts/BlogLayout.astro'
 import Favicons from '../../components/home/Favicons.astro'
 import NavBar from "../../components/home/NavBar.astro"
 import Footer from "../../components/home/Footer.astro"
 ---
 
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Favicons icons -->
-		<Favicons />    
-    <script defer src="scripts/filter.js" 
-    type="module"></script>    
-    <title>Блог || Автоюрист Сургут</title>
-  </head>
-  <body> 
-    <NavBar />   
-    <main>     
-      <div class="container">
-        <label for="search" class="pt-8">
-          <input
-            type="search"
-            id="search"
-            autocomplete="off"
-            spellcheck="false"
-            placeholder="Поиск по блогу"
-          />
-        </label>
-        <div class="post-container"></div>
-        <button class="btn btn--view">Еще посты</button>
-      </div>
-    </main>
-    <Footer /> 
-    <a href="#" id="scroll_top" title="Наверх"></a>   
-  </body>
-</html>
+
+<Layout title='Блог || Автоюрист Сургут'>
+  <main>     
+    <div class="container">
+      <label for="search" class="pt-8">
+        <input
+          type="search"
+          id="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Поиск по блогу"
+        />
+      </label>
+      <div class="post-container"></div>
+      <button class="btn btn--view">Еще посты</button>
+    </div>
+  </main>
+</Layout>
+
+ 
+  
+
 
 <style>
   #scroll_top {

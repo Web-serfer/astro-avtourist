@@ -1,6 +1,5 @@
 ---
-import '../styles/home/main.css'
-import '../styles/home/article.css'
+
 import Favicons from '../components/home/Favicons.astro'
 import NavBar from '../components/home/NavBar.astro'
 import Footer from '../components/home/Footer.astro'
@@ -12,24 +11,28 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
+
+
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Favicons icons -->
 		<Favicons />
-
+		
 		<meta name="description" content="" />
     <meta name="keywords" content="" />
-		
+		<!-- Canonical link -->
+		<link rel="canonical" href="https://avtourist-surgut.ru/blog">
+    <script defer src="scripts/filter.js" 
+    type="module"></script> 	
 		<title>{title}</title>
-	</head>
-	<body>
-		<NavBar/>
-		<section class='container--main article--container'>
-			<slot />
-		</section>
-		<Footer />
-	</body>
+	</head>    
+	<body> 
+    <NavBar />
+      <slot />
+    <Footer /> 
+    <a href="#" id="scroll_top" title="Наверх"></a>   
+  </body>
 </html>

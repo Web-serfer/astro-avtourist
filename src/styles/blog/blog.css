@@ -46,12 +46,12 @@ body {
   background: #131415;
   color: hsl(var(--text));
   margin: var(--xlg) var(--lg);
-  font-size: var(--sm);
+  font-size: var(--xsm);
 }
 
 .container {
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr;  
   gap: var(--xlg);
   max-width: 1400px;
   margin: auto;
