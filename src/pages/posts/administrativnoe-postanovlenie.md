@@ -11,7 +11,7 @@ draft: false
 ---
 
 <details open>
-<summary><h3>Содержание</h3></summary>
+<summary><h2>Содержание</h2></summary>
 <ol>
   <li>
     <a href="#1">Понятие адм.постановления</a>  
@@ -45,7 +45,11 @@ draft: false
 <br>
 <p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
 
-<img class="py-8" src="./images/jsoncrack.png"/>
+<img 
+  class="py-8" 
+  src="./images/jsoncrack.png" 
+  alt="" 
+/>
 
 Website: <a href="https://jsoncrack.com/" target="_blank">jsoncrack.com</a>
 
