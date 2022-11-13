@@ -22,25 +22,6 @@ import Layout from '../../layouts/BlogLayout.astro'
 </Layout>
   
 
-
-<style>
-  #scroll_top {
-    display: none;
-    position: fixed;
-    bottom: 160px;
-    right: 100px;
-    z-index: 1000;
-    width: 32px;
-    height: 32px;
-    background: url(images/arrowUp.svg) 50% 50% no-repeat;
-    border-radius: 50%;
-    opacity: 0.5;
-}
-#scroll_top:hover {
-  opacity: 1;
-}
-</style>
-
 <script>
   (function loadSkeleton() {
     const skeletonCSS = `
@@ -133,10 +114,8 @@ import Layout from '../../layouts/BlogLayout.astro'
     ].join("");
   })();
 </script>
-<script is:inline src="/scripts/jquery-3.6.0.min.js" >
-</script>
-<script is:inline src="/scripts/arrowTop.js" >  
-</script>
+
+
 
 
 
