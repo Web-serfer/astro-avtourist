@@ -19,8 +19,30 @@ import { Play } from 'react-feather'
   </div>
 </section>
 
-<style>
-  .btn{
+<style>  
+.course-preview {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2em;
+  align-items: center;
+}
+
+.course-preview-image {
+  display: block;
+  border-radius: 10px;
+  object-fit:cover;
+  cursor: pointer;
+}
+
+.course-preview-image-border {
+  padding: 3px;
+  margin: 0;
+  line-height: 0;
+  border-radius: 10px;
+  border: 1px solid var(--mainBorderColor);
+}
+
+.btn {
   border: 1px solid var(--mainBorderColor);
   color: var(--secondaryTextColor);
   border-radius: 5px;

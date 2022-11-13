@@ -3,7 +3,7 @@ import admin from '../../images/home/admin.jpg'
 ---
 
 <section class="wrapper--hero" class="section--page">
-  <img class="admin" src={admin}/>
+  <img class="admin" src={admin} alt="Автоюрист Сургут" width="150px" height="150px"/>
   <div>
     <h1 id="user-name" class="py-10">Автоюрист Сургут</h1>
     <p class="pr-2">Лишаю водительских прав ? Попали в ДТП ?
@@ -21,10 +21,16 @@ import admin from '../../images/home/admin.jpg'
   }
   
   @media (max-width: 600px) {
-    .wrapper--hero {
-      padding-top: 1em;
-      gap: 1em;
-    }
+    .container--main{
+    padding: 1em;
+  }
+  
+  .wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+  }
   }
 
   .admin{
