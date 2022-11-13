@@ -1,1 +1,21 @@
-<h2>404 Страницы не существует</h2>
+---
+import Layout from '../layouts/Layout.astro'
+
+import Hero404 from '../components/home/hero404.astro'
+
+import SocialsLinks from '../components/home/SocialsLinks.astro'
+
+import Video404 from '../components/home/Video404.astro'
+
+---
+
+
+<Layout title="404 || Автоюрист Сургут">
+	<Hero404 />
+	<SocialsLinks />	
+	<Video404 />
+	<section class="section--page">
+		<a id="events"></a>
+		<h3>Страница, которую вы ищете была удалена или недоступна.</h3>	
+  </section>
+</Layout>

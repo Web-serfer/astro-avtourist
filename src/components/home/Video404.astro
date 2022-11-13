@@ -1,0 +1,83 @@
+---
+import NewVideo from '../../images/home/newVideo.png'
+import { Play } from 'react-feather'
+
+const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4'
+---
+
+<section class="section--page new-video">
+  <div class='new-video-image-border'>
+    <a href={href} target="_blank">
+        <img 
+          class='new-video-image'                  
+          src={NewVideo}
+          alt="Новое видео" 
+        />
+    </a>
+  </div>
+  <div id='new-video-body'>
+    <h3 class="py-2">Новое видео</h3>    
+    <a class='btn btn--md' href={href} target="_blank">
+      <Play 
+        width="16px" 
+        height="16px" 
+      />
+      Смотреть на YouTube
+    </a>
+  </div>
+</section>
+
+<style>  
+.new-video {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2em;
+  align-items: center;
+}
+
+.new-video-image {
+  display: block;
+  border-radius: 10px;  
+  object-fit:cover;
+  cursor: pointer;
+}
+
+.new-video-image-border {
+  padding: 3px;
+  margin: 0;
+  line-height: 0;
+  border-radius: 10px;
+  border: 1px solid var(--mainBorderColor);
+}
+
+.btn {
+  border: 1px solid var(--mainBorderColor);
+  color: var(--secondaryTextColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap:5px;
+  width: fit-content;
+  box-shadow: var(--shadowBoxBottom);
+}
+
+.btn:hover {
+  border-color: var(--mainLinkColor-light);
+  transition: all .5s ease 0s;
+  
+}
+
+.btn--md {
+  font-size: .9em;
+}
+
+@media(max-width:600px) {
+  .new-video{
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+</style>

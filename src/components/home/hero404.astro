@@ -1,0 +1,71 @@
+---
+import Error from '../../images/home/404.jpg'
+---
+
+<section class="wrapper--hero" class="section--page">
+  <img class="admin" src={Error} alt="Страница 404" width="150px" height="150px"/>
+  <div>
+    <h1 class="py-10">Страница Ошибки</h1>
+    <p class="pr-2">404. Запрашиваемая страница не найдена
+    </p>   
+  </div>  
+</section>
+
+<style>
+  .wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+  
+  @media (max-width: 600px) {  
+  .wrapper--hero{
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+
+  .admin{
+    box-sizing: content-box;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;    
+  }
+
+  h1{    
+    font-size: 3em;
+    line-height: 0;
+    letter-spacing: 1px; 
+    font-weight: bold;    
+  }  
+  
+  @media (max-width: 706px) {
+    h1 {
+      font-size: 2em; 
+      text-align: center;      
+    }
+    
+    p {
+      text-align: center;
+    }
+  } 
+  
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.5em; 
+      text-align: center;      
+    }
+    
+    p {
+      font-size: .8em;
+    }
+    
+    
+  } 
+  
+</style>
