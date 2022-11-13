@@ -5,7 +5,7 @@ import Hero from '../components/home/hero.astro'
 
 import SocialsLinks from '../components/home/SocialsLinks.astro'
 
-import HomeVideo from '../components/home/HomeVideo.astro'
+import NewVideo from '../components/home/NewVideo.astro'
 
 // import Events from '../components/home/Events.astro'
 import EventPreview from '../components/home/EventPreview.astro'
@@ -32,7 +32,7 @@ events = events.filter((event) => !event.frontmatter.draft);
 <Layout title="Главная || Автоюрист Сургут">
 	<Hero />
 	<SocialsLinks />	
-	<HomeVideo />
+	<NewVideo />
 	<section class="section--page">
 		<a id="events"></a>
 		<h3>Новая статья</h3>
