@@ -5,12 +5,13 @@ import VideoCard from '../home/VideoCard.astro'
 <section>
     <div id="video"></div>
     <h3>Видео материалы</h3>
-    <p class="py-4">Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности. </p>
+    <p class="py-4">
+      Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности. 
+    </p>
 
-  <div id="video-wrapper">
-    <a href="#" target="_blank">        
-      <VideoCard />            
-    </a>
+  <div id="video-wrapper">           
+      <VideoCard />   
+      <VideoCard />   
   </div>
 </section>
 
@@ -21,13 +22,17 @@ import VideoCard from '../home/VideoCard.astro'
   gap: 1em;
 }
 
-
-
 @media(max-width:800px) {
   #video-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+  }
+}
+
+@media (max-width: 536px) {
+  .py-4 {
+    font-size: .8em;
   }
 }
 

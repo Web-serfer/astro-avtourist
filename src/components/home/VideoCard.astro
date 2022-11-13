@@ -1,67 +1,80 @@
 ---
-import admin from '../../images/home/admin.jpg'
+import admin from "../../images/home/admin.jpg";
 
-const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4'
+const href =
+  "https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4";
 ---
-<div class="video-card">
-  <div class="video-card__header">
-      <div class="video-avatar__border">        
-          <img 
-          class="video-img" 
-          src={admin} 
-          width="60px" 
+
+<a href={href} target="_blank">
+  <div class="video-card">
+    <div class="video-card__header">
+      <div class="video-avatar__border">
+        <img
+          class="video-img"
+          src={admin}
+          width="60px"
           height="60px"
-          alt="Новое видео" 
-          />                       
+          alt="Новое видео"
+        />
       </div>
       <div>
-        <p class="video-name"> 
-          Название видео
-        </p>
+        <p class="video-name">Название видео</p>
         <small>О чем видео</small>
       </div>
+    </div>
   </div>
-</div>
+</a>
 
 <style>
   .video-card {
-  border: 1px solid var(--mainBorderColor);
-  padding: 1em;
-  border-radius: 10px;
-  line-height: 1em;
-  transition: 0.3s;
-  box-shadow: var(--shadowBoxBottom);
+    border: 1px solid var(--mainBorderColor);
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 1em;
+    transition: 0.3s;
+    box-shadow: var(--shadowBoxBottom);
+  }
 
-}
+  .video-card:hover {
+    border-color: var(--mainLinkColor-light);
+    transition: all 0.5s ease 0s;
+  }
 
-.video-card:hover {
-  border-color:var(--mainLinkColor-light);
-  transition: all .5s ease 0s;
-}
+  .video-card__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-.video-card__header {
-  display: flex;
-  align-items: center;
+  .video-img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1em;
+    border: 2px solid var(--mainBorderColor);
+  }
 
-}
+  .video-name {
+    color: var(--mainTextColor);
+    line-height: 1em;
+    margin: 0;
+  }
 
-.video-img {
-  height: 60px;
-  width: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 1em;
-  border: 2px solid var(--mainBorderColor);
-}
+  .video-info {
+    font-size: 13px;
+  }
 
-.video-name, a {
-  color: var(--mainTextColor);
-  line-height: 1em;
-  margin:0;
-}
-
-.video-info {
-  font-size: 13px;
-}
-
+  @media (max-width: 536px) {
+    .video-card__header {
+      flex-direction:column;
+      align-items: center;
+    }
+    .video-img {
+      margin-bottom: 15px;
+    }
+    .video-name {
+      font-size: .9em;
+    }
+  }
 </style>
