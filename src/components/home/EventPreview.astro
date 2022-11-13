@@ -1,4 +1,5 @@
 ---
+const mainBorderColor = '#2b3031'
 const {frontmatter} = Astro.props;
 import { ArrowRight, Calendar} from 'react-feather';
 ---
@@ -13,13 +14,10 @@ import { ArrowRight, Calendar} from 'react-feather';
               <small>{frontmatter.descr} </small>             
             </div>
         </div>
-
         <ArrowRight size={18}/>
     </div>
   </a>
 
-  <style>
-    h3 {
-    line-height: 0;
-  }
-  </style>
+  
+
+

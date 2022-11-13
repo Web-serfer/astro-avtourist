@@ -12,20 +12,14 @@ import EventPreview from '../components/home/EventPreview.astro'
 
 import ArticlePreview from '../components/home/ArticlePreview.astro'
 
-import Winners from '../components/home/Winners.astro'
+import Video from '../components/home/Video.astro'
 
 
-import { FileText, ArrowRight, Play, Calendar} from 'react-feather';
 
 let posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
 );
 posts = posts.filter((post) => !post.frontmatter.draft);
-
-//Orderd By "order attribute"
-// const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
-// 	(a, b) => b.frontmatter.order - a.frontmatter.order
-// );
 
 let events = (await Astro.glob('./events/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
@@ -55,6 +49,6 @@ events = events.filter((event) => !event.frontmatter.draft);
 			<ArticlePreview frontmatter={post.frontmatter}/>
 		))}
 	</section>
-	<Winners/>
+	<Video />
 </Layout>
 

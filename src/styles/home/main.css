@@ -4,6 +4,7 @@
     --mainTextColor-light:#000;
     --secondaryTextColor-light:rgb(51 51 51);
     --mainLinkColor-light:#6482c2;    
+    --mainBorderColor:#0c0c0c;
     --mainBorderColor-light:rgb(218, 218, 218);
     --mainBgColor-light:rgb(249, 250,251);
     --mainTextColor-dark:#fff;
@@ -34,10 +35,13 @@
 }
 
 body{
-    background-color: var(--mainBgColor);            
+  background-color: var(--mainBgColor);            
 }
 
-img { max-width: 100%; height: auto; }
+img { 
+  max-width: 100%;
+  height: auto; 
+}
 
 
 h2{
@@ -75,7 +79,6 @@ li{
 .container--main{
   max-width: 800px;
   margin: 0 auto;
-
 }
 
 .section--page{
@@ -89,14 +92,12 @@ li{
 }
 
 
-
-
 .card--article-preview{
   display: flex;
   justify-content: space-between;
   gap: 1em;
   align-items: center;
-  padding:0.5em 0;
+  padding: 0.5em 0;
   border-bottom: 1px solid var(--mainBorderColor);
 }
 
@@ -116,30 +117,31 @@ li{
 
 .article-preview__body > h3{
   margin-right: 0.5em;
+  line-height: 0;
 }
 
 
 .astro-code{
   padding: 1em;
   border-radius: 10px;
-  background-color: #0c0c0c!important;
+  background-color: var(--mainBorderColor);
   
 }
 
 .astro-code code{
   padding: 0;
-  background-color: #0c0c0c!important;
+  background-color: var(--mainBorderColor);
 }
 
 
 code{
-  background-color: #3d3d3d!important;
+  background-color: #3d3d3d;
   padding: 2px 5px;
   border-radius: 5px;
 }
 
 blockquote{
-  background-color: #0c0c0c!important;
+  background-color: var(--mainBorderColor);
   padding: .5em 1em;
   border-left: 5px solid #055f7a;
 }
@@ -159,7 +161,7 @@ blockquote{
     grid-template-columns: 1fr;
   }
 
-  #winners--wrapper{
+  #video--wrapper{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;

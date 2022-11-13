@@ -1,0 +1,93 @@
+---
+import admin from '../../images/home/admin.jpg'
+
+---
+
+<section>
+    <div id="video"></div>
+    <h3>Видео материалы</h3>
+    <p class="py-4">Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности. </p>
+
+  <div id="video-wrapper">
+    <a href="#" target="_blank">        
+        <div class="video-card">
+            <div class="video-card__header">
+                <div class="video-avatar__border">
+                    <img 
+                      class="video-img" 
+                      src={admin} 
+                      width="60px" 
+                      height="60px"
+                    />
+                </div>
+                <div>
+                  <p class="video-name">Название видео</p>
+                  <small>О чем видео</small>
+                </div>
+            </div>
+        </div>
+    </a>
+   
+
+    
+
+    </div>
+</section>
+
+<style>    
+#video-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.video-card {
+  border: 1px solid var(--mainBorderColor);
+  padding: 1em;
+  border-radius: 10px;
+  line-height: 1em;
+  transition: 0.3s;
+  box-shadow: var(--shadowBoxBottom);
+
+}
+
+.video-card:hover {
+  border-color:var(--mainLinkColor-light);
+  transition: all .5s ease 0s;
+}
+
+.video-card__header {
+  display: flex;
+  align-items: center;
+
+}
+
+.video-img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1em;
+  border: 2px solid var(--mainBorderColor);
+}
+
+.video-name, a {
+  color: var(--mainTextColor);
+  line-height: 1em;
+  margin:0;
+}
+
+.video-info {
+  font-size: 13px;
+}
+
+
+@media(max-width:800px) {
+  #video-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+</style>

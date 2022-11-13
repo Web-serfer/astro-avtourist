@@ -14,19 +14,11 @@ import { FileText, ArrowRight} from 'react-feather';
             <div>
               <strong>{frontmatter.title}</strong>
               <br/>
-              <small>{frontmatter.descr}</small>
-              <!-- <small>{frontmatter.tags.map(tag => (
-                <span>{tag} {frontmatter.tags[frontmatter.tags.length-1] != tag && ','} </span>
-              ))}</small> -->
+              <small>{frontmatter.descr}</small>              
             </div>
         </div>
-
         <ArrowRight size={18}/>
     </div>
   </a>
 
-  <style>
-    h3{
-      line-height: 0;
-    }
-  </style>
+
