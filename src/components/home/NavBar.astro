@@ -9,16 +9,16 @@
     </a>    
     <ul role="navigation">
       <li>
-        <a class="link" href="/">Главная</a>
+        <a class="nav-link" href="/">Главная</a>
       </li>
       <li>
-        <a class="link" href="/blog">Блог</a>
+        <a class="nav-link" href="/blog">Блог</a>
       </li>
       <li>
-        <a class="link" href="/documents">Документы</a>
+        <a class="nav-link" href="/documents">Документы</a>
       </li>
       <li>
-        <a class="link" href="/pdd">ПДД</a>
+        <a class="nav-link" href="/pdd">ПДД</a>
       </li>                    
     </ul>       
 </nav>
@@ -62,7 +62,7 @@
 			font-size: .2em;
 		}
 
-    .link {
+    .nav-link {
       font-size: .95em;     
       
     }
@@ -93,10 +93,15 @@
   }
 
   .active {
-    color: var(--mainLinkColor-light);
-  }
+  color: #6482c2;
+}
 
 </style>
+
+<!--  Color active menu -->
+<script is:inline src="/scripts/activePage.js" >
+  
+</script>
 
 
 
