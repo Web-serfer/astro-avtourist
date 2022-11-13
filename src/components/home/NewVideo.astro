@@ -1,15 +1,15 @@
 ---
-import HeroVideo from '../../images/home/heroVideo.png'
+import NewVideo from '../../images/home/newVideo.png'
 import { Play } from 'react-feather'
 ---
 
-<section class="section--page course-preview">
-  <div class='course-preview-image-border'>
+<section class="section--page new-video">
+  <div class='new-video-image-border'>
     <a href="#" target="_blank">
-        <img class='course-preview-image' src={HeroVideo} />
+        <img class='new-video-image' src={NewVideo} />
     </a>
   </div>
-  <div id='course-preview-body'>
+  <div id='new-video-body'>
     <h3>Новое видео</h3>
     <p class="py-4">Хотите узнать больше ???</p>
     <a class='btn btn--md' href='https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4' target="_blank">
@@ -20,21 +20,21 @@ import { Play } from 'react-feather'
 </section>
 
 <style>  
-.course-preview {
+.new-video {
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 2em;
   align-items: center;
 }
 
-.course-preview-image {
+.new-video-image {
   display: block;
   border-radius: 10px;
   object-fit:cover;
   cursor: pointer;
 }
 
-.course-preview-image-border {
+.new-video-image-border {
   padding: 3px;
   margin: 0;
   line-height: 0;
@@ -55,14 +55,21 @@ import { Play } from 'react-feather'
   box-shadow: var(--shadowBoxBottom);
 }
 
-.btn:hover{
+.btn:hover {
   border-color: var(--mainLinkColor-light);
   transition: all .5s ease 0s;
   
 }
 
-.btn--md{
+.btn--md {
   font-size: .9em;
+}
+
+@media(max-width:600px) {
+  .new-video{
+    grid-template-columns: 1fr;
+  }
+  
 }
 
 </style>

@@ -140,11 +140,7 @@ code{
   border-radius: 5px;
 }
 
-blockquote{
-  background-color: var(--mainBorderColor);
-  padding: .5em 1em;
-  border-left: 5px solid #055f7a;
-}
+
 
 .astro-code span{
   font-family:monospace;
@@ -157,7 +153,7 @@ blockquote{
     padding: 1em;
   }  
 
-  .course-preview{
+  .new-video-preview{
     grid-template-columns: 1fr;
   }
 
