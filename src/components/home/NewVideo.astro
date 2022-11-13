@@ -1,19 +1,28 @@
 ---
 import NewVideo from '../../images/home/newVideo.png'
 import { Play } from 'react-feather'
+
+const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4'
 ---
 
 <section class="section--page new-video">
   <div class='new-video-image-border'>
-    <a href="#" target="_blank">
-        <img class='new-video-image' src={NewVideo} />
+    <a href={href} target="_blank">
+        <img 
+          class='new-video-image'                  
+          src={NewVideo}
+          alt="Новое видео" 
+        />
     </a>
   </div>
   <div id='new-video-body'>
     <h3>Новое видео</h3>
     <p class="py-4">Хотите узнать больше ???</p>
-    <a class='btn btn--md' href='https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4' target="_blank">
-      <Play width="16px" height="16px" />
+    <a class='btn btn--md' href={href} target="_blank">
+      <Play 
+        width="16px" 
+        height="16px" 
+      />
       Смотреть на YouTube
     </a>
   </div>
@@ -29,7 +38,7 @@ import { Play } from 'react-feather'
 
 .new-video-image {
   display: block;
-  border-radius: 10px;
+  border-radius: 10px;  
   object-fit:cover;
   cursor: pointer;
 }

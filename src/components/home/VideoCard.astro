@@ -1,18 +1,23 @@
 ---
 import admin from '../../images/home/admin.jpg'
+
+const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4'
 ---
 <div class="video-card">
   <div class="video-card__header">
-      <div class="video-avatar__border">
+      <div class="video-avatar__border">        
           <img 
-            class="video-img" 
-            src={admin} 
-            width="60px" 
-            height="60px"
-          />
+          class="video-img" 
+          src={admin} 
+          width="60px" 
+          height="60px"
+          alt="Новое видео" 
+          />                       
       </div>
       <div>
-        <p class="video-name">Название видео</p>
+        <p class="video-name"> 
+          Название видео
+        </p>
         <small>О чем видео</small>
       </div>
   </div>
