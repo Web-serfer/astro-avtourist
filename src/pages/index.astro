@@ -33,16 +33,14 @@ events = events.filter((event) => !event.frontmatter.draft);
 	<Hero />
 	<SocialsLinks />	
 	<NewVideo />
-	<section class="section--page">
-		<a id="events"></a>
+	<section class="section--page">		
 		<h3>Новая статья</h3>
 	
 		{events.map(event => (
 			<EventPreview frontmatter={event.frontmatter}/>
 		))}
 	</section>	
-	<section class="section--page">
-		<a id="blog"></a>
+	<section class="section--page">		
 		<h3>Последние статьи</h3>
 
 		{posts.map(post => (
