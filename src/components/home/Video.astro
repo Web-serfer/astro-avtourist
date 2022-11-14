@@ -10,19 +10,31 @@ const {
   heading = "Видео материалы", 
   text = "Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности." 
 } = Astro.props;
+
+const videosData = [
+  {title: 'Видео 1', subtitle: 'Описание 1'},
+  {title: 'Видео 2', subtitle: 'Описание 2'},
+  {title: 'Видео 3', subtitle: 'Описание 3'},
+  {title: 'Видео 4', subtitle: 'Описание 4'},
+  {title: 'Видео 5', subtitle: 'Описание 5'},
+  {title: 'Видео 6', subtitle: 'Описание 6'}
+];
 ---
-
-
-  
 
 <section>
     <div id="video"></div>
     <h3>{heading}</h3>
     <p class="py-4">{text}</p>
 
-  <div id="video-wrapper">           
-      <VideoCard />   
-      <VideoCard />   
+  <div id="video-wrapper"> 
+    {videosData.map(video => (
+        <VideoCard 
+          title={video.title}
+          subtitle={video.subtitle}
+          /> 
+      ))}
+        
+        
   </div>
 </section>
 

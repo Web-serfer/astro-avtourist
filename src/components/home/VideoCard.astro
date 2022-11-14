@@ -3,8 +3,19 @@ import admin from "../../images/home/admin.webp";
 
 const href =
   "https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4";
+
+  export interface Props {
+  href?: string;
+  img?: string;
+  title?: string;
+  subtitle?: string;
+}
+  
+const { title, subtitle } = Astro.props;
 ---
 
+
+  
 <a href={href} target="_blank">
   <div class="video-card">
     <div class="video-card__header">
@@ -18,8 +29,8 @@ const href =
         />
       </div>
       <div>
-        <p class="video-name">Название видео</p>
-        <small>О чем видео</small>
+        <p class="video-name">{title}</p>
+        <small>{subtitle}</small>
       </div>
     </div>
   </div>
