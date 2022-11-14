@@ -1,15 +1,22 @@
 ---
 import admin from '../../images/home/admin.webp'
----
+
+export interface Props {
+  heading?: string;
+  text?: string;
+}
+  
+const { 
+  heading = "Автоюрист Сургут", 
+  text = "Лишаю водительских прав ? Попали в ДТП ? Не можете поставить на учет автомобиль ? Проблемы с ГИБДД ? Спор со страховой компанией ?  Звоните ... Консультации бесплатно ... "
+} = Astro.props;
+---  
 
 <section class="wrapper--hero" class="section--page">
   <img class="admin" src={admin} alt="Автоюрист Сургут" width="150px" height="150px"/>
   <div>
-    <h1 class="py-10">Автоюрист Сургут</h1>
-    <p class="pr-2">Лишаю водительских прав ? Попали в ДТП ?
-      Не можете поставить на учет автомобиль ?
-      Проблемы с ГИБДД ? Спор со страховой компанией ?   Звоните ... Консультации бесплатно ... 
-    </p>
+    <h1 class="py-10">{heading}</h1>
+    <p class="pr-2">{text}</p>
   </div>  
 </section>
 
@@ -54,8 +61,7 @@ import admin from '../../images/home/admin.webp'
     p {
       text-align: center;
     }
-  } 
-  
+  }   
 
   @media (max-width: 400px) {
     h1 {
