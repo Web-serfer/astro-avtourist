@@ -1,13 +1,24 @@
 ---
 import VideoCard from '../home/VideoCard.astro'
+
+export interface Props {
+  heading?: string;
+  text?: string;
+}
+  
+const { 
+  heading = "Видео материалы", 
+  text = "Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности." 
+} = Astro.props;
 ---
+
+
+  
 
 <section>
     <div id="video"></div>
-    <h3>Видео материалы</h3>
-    <p class="py-4">
-      Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности. 
-    </p>
+    <h3>{heading}</h3>
+    <p class="py-4">{text}</p>
 
   <div id="video-wrapper">           
       <VideoCard />   
