@@ -8,32 +8,35 @@ const navLinks = [
 ---
   
 
-<nav class="bg-[#18191a] py-6 sticky top-0">
+<div class="navbar bg-[#18191a] py-6 sticky top-0">
     <a class="logo" href="/">
       <img 
         class="logo" 
         src="/logo.png"
         alt="Автоюрист Сургут" 
       />
-    </a>    
-    <ul role="navigation">
-      {
-        navLinks.map ((
-          link =>
-            <li>
-              <a class="nav-link" href={link.url}>
-                      {link.title}
-              </a>
-            </li>
-          ))
-      }                         
-    </ul>       
-</nav>
+    </a>
+    <nav>
+      <ul role="navigation">
+        {
+          navLinks.map ((
+            link =>
+              <li>
+                <a class="nav-link" href={link.url}>
+                        {link.title}
+                </a>
+              </li>
+            ))
+        }                         
+      </ul>
+    </nav>    
+           
+</div>
 
 
 
 <style>
-  nav {
+  .navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -52,7 +55,7 @@ const navLinks = [
 
     
 
-  nav a {
+  .navbar a {
     color:#adb0b1;
     font-size: 1em;
   }
@@ -74,7 +77,7 @@ const navLinks = [
       
     }
 
-    nav a {
+    .navbar a {
       margin: 0 .5em;
       font-size: .7em;      
     }
@@ -82,7 +85,7 @@ const navLinks = [
 
     
 
-  nav a {
+  .navbar a {
     margin: 0 1em;
     text-transform: uppercase;
   }
@@ -94,7 +97,7 @@ const navLinks = [
   }
 
   
-  nav a:hover{
+  .navbar a:hover{
     color: var(--mainLinkColor-light);
     transition: all .5s ease 0s;
   }
