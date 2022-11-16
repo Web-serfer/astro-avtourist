@@ -16,7 +16,7 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Favicons icons -->
+		<!-- Favicons -->
 		<Favicons />
 		
 		<meta name="description" content="Автоюрист Сургута! Лишают прав? Попали в ДТП? Проблемы со Страховой? Звони +79222538375" />
@@ -33,7 +33,7 @@ const { title } = Astro.props;
 		<section class='container--main'>
 			<slot />
 		</section>
-		<Footer />
+		<Footer client:idle />
 	</body>
 </html>
 

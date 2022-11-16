@@ -47,6 +47,6 @@ events = events.filter((event) => !event.frontmatter.draft);
 			<ArticlePreview frontmatter={post.frontmatter}/>
 		))}
 	</section>
-	<Video />
+	<Video client:idle />
 </Layout>
 
