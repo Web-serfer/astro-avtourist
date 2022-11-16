@@ -37,14 +37,14 @@ events = events.filter((event) => !event.frontmatter.draft);
 	<section class="section--page">		
 		<h3>Новая статья</h3>	
 		{events.map(event => (
-			<EventPreview frontmatter={event.frontmatter}/>
+			<EventPreview frontmatter={event.frontmatter} client:idle />
 		))}
 	</section>
 
 	<section class="section--page">		
 		<h3>Последние статьи</h3>
 		{posts.map(post => (
-			<ArticlePreview frontmatter={post.frontmatter}/>
+			<ArticlePreview frontmatter={post.frontmatter} client:idle />
 		))}
 	</section>
 	<Video client:idle />
