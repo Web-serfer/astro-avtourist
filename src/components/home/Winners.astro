@@ -1,0 +1,157 @@
+---
+import admin from '../../images/home/admin.jpg'
+import femi from '../../images/home/femi.jpg'
+import fifi from '../../images/home/fifi.jpg'
+import sahil from '../../images/home/sahil.jpeg'
+import sudhanshu from '../../images/home/sudhanshu.jpg'
+---
+
+<section>
+    <div id="winners"></div>
+    <h3>Видео материалы</h3>
+    <p class="py-4">Представляем вниманию наших Гостей видеоролики c полезным юридическим контентом на актуальные темы современности. </p>
+
+  <div id="winners--wrapper">
+    <a href="https://twitter.com/PraveenMalethia" target="_blank">
+        <div class="winner--card">
+            <div class="winner--card--header">
+                <div class="winner--avatar__border">
+                    <img class="winner--avatar" src={admin}/>
+                </div>
+                <div>
+                    <p class="winner--name">Praveen Kumar</p>
+                    <small>Code Battle</small>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div class="winner--card">
+        <div class="winner--card--header">
+            <div class="winner--avatar__border">
+                <img class="winner--avatar" src={admin} />
+            </div>
+            <div>
+                <p class="winner--name">Adarsh</p>
+                <small>Code Battle</small>
+            </div>
+        </div>
+        
+    </div>
+
+    <a href="https://twitter.com/Sahilkhanna07" target="_blank">
+        <div class="winner--card">
+            <div class="winner--card--header">
+                <div class="winner--avatar__border">
+                    <img class="winner--avatar" src={sahil}/>
+                </div>
+                <div>
+                    <p class="winner--name">Sahil</p>
+                    <small>Code Battle</small>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://twitter.com/stephaniefifi_" target="_blank">
+        <div class="winner--card">
+            <div class="winner--card--header">
+                <div class="winner--avatar__border">
+                    <img class="winner--avatar" src={fifi}/>
+                </div>
+                <div>
+                    <p class="winner--name">Fifi</p>
+                    <small>Code Battle</small>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://twitter.com/sudhanshu_p_12" target="_blank">
+        <div class="winner--card">
+            <div class="winner--card--header">
+                <div class="winner--avatar__border">
+                    <img class="winner--avatar" src={sudhanshu}/>
+                </div>
+                <div>
+                    <p class="winner--name">Sudhanshu Prasad</p>
+                    <small>Design Battle</small>
+                </div>
+            </div>
+        </div>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/femiodejide" target="_blank">
+        <div class="winner--card">
+            <div class="winner--card--header">
+                <div class="winner--avatar__border">
+                    <img class="winner--avatar" src={femi}/>
+                </div>
+                <div>
+                    <p class="winner--name">Femi</p>
+                    <small>Design Battle</small>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    </div>
+</section>
+
+<style>
+    
+#winners--wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.winner--card{
+  border: 1px solid var(--mainBorderColor);
+  padding: 1em;
+  border-radius: 10px;
+  line-height: 1em;
+  transition: 0.3s;
+
+}
+
+.winner--card:hover{
+  border-color:var(--mainLinkColor-light);
+  transition: all .5s ease 0s;
+}
+
+.winner--card--header{
+  display: flex;
+  align-items: center;
+
+}
+
+.winner--avatar{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1em;
+  border: 2px solid var(--mainBorderColor);
+}
+
+.winner--name, a{
+  color: var(--mainTextColor);
+  line-height: 1em;
+  margin:0;
+}
+
+.winner--info{
+  font-size: 13px;
+}
+
+
+@media(max-width:800px) {
+  #winners--wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+</style>

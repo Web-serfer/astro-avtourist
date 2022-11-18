@@ -1,0 +1,44 @@
+---
+import HeroVideo from '../../images/home/heroVideo.png'
+import { Play } from 'react-feather'
+---
+
+<section class="section--page course-preview">
+  <div class='course-preview-image-border'>
+    <a href="#" target="_blank">
+        <img class='course-preview-image' src={HeroVideo} />
+    </a>
+  </div>
+  <div id='course-preview-body'>
+    <h3>Вводное видео</h3>
+    <p class="py-4">Хотите узнать больше ???</p>
+    <a class='btn btn--md' href='https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4' target="_blank">
+      <Play width="16px" height="16px" />
+      Смотреть на YouTube
+    </a>
+  </div>
+</section>
+
+<style>
+  .btn{
+  border: 1px solid var(--mainBorderColor);
+  color: var(--secondaryTextColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap:5px;
+  width: fit-content;
+}
+
+.btn:hover{
+  border-color: var(--mainLinkColor-light);
+  transition: all .5s ease 0s;
+}
+
+.btn--md{
+  font-size: .9em;
+}
+
+</style>
