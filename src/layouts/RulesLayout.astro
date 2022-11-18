@@ -2,7 +2,7 @@
 import '../styles/home/main.css'
 import Favicons from '../components/home/Favicons.astro'
 import NavBar from '../components/home/NavBar.astro'
-import Breadcrumb from '../components/pdd/Breadcrumb.astro'
+
 import Footer from '../components/home/Footer.astro'
 
 export interface Props {
@@ -31,8 +31,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<NavBar/>
-		<section class='container grid place-content-center pt-6'>
-			<Breadcrumb />
+		<section class='container pt-6'>			
 			<slot />
 		</section>
 		<Footer />		
