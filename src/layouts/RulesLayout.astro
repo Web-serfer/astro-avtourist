@@ -1,0 +1,41 @@
+---
+import '../styles/home/main.css'
+import Favicons from '../components/home/Favicons.astro'
+import NavBar from '../components/home/NavBar.astro'
+import Breadcrumb from '../components/pdd/Breadcrumb.astro'
+import Footer from '../components/home/Footer.astro'
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicons -->
+		<Favicons />
+		
+		<meta name="description" content="ПДД Онлайн" />
+
+    <meta name="keywords" content="ПДД экзамен" />
+		<!-- Canonical link -->
+		<link rel="canonical" href="https://avtourist-surgut.ru/pdd">
+
+	
+		<title>{title}</title>
+	</head>
+	<body>
+		<NavBar/>
+		<section class='container grid place-content-center pt-6'>
+			<Breadcrumb />
+			<slot />
+		</section>
+		<Footer />		
+	</body>
+</html>
+

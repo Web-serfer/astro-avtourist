@@ -30,15 +30,15 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<NavBar/>
-		<section class='container--main'>
+		<section class='container'>
 			<slot />
 		</section>
-		<Footer client:idle />
+		<Footer />
 	</body>
 </html>
 
 <style>
-	.container--main{
+	.container {
     padding: 1em;
   }
   
