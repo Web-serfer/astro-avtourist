@@ -45,7 +45,7 @@ input::placeholder {
 body {   
   background: #131415;
   color: hsl(var(--text));
-  margin: var(--xlg) var(--lg);
+  /* margin: var(--xlg) var(--lg); */
   font-size: var(--xsm);
 }
 
@@ -54,7 +54,7 @@ body {
   grid-template-rows: auto auto 1fr;  
   gap: var(--xlg);
   max-width: 1400px;
-  margin: auto;
+  margin: auto;  
 }
 
 h1 {
@@ -105,11 +105,10 @@ small {
 }
 
 .post {
-  background-color: #1b1c1d;
-  /* background-color: hsl(var(--bkg)); */
+  background-color: #1b1c1d;  
   border-radius: var(--radius--lg);
   padding: var(--lg);  
-  box-shadow: 6px 6px 4px 2px rgba(214, 224, 232, 0.2);
+  box-shadow: 2px 2px 5px 2px rgb(214 224 232 / 20%);
   display: grid;
   gap: var(--md);
 }
