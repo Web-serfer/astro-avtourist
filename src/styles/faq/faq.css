@@ -102,7 +102,7 @@ input[name='panel']:checked + .collapsible {
 
 @media (max-width: 426px) {
   label {
-    font-size: .57em;
+    font-size: .55em;
   }
 
   .collapsible p {
