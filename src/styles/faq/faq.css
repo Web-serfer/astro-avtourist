@@ -66,62 +66,119 @@ input[name='panel']:checked + .collapsible {
 
 /* Media */
 
-@media (max-width: 634px) {
-  label {
-    font-size: .95em;
-  }
-
-  .collapsible p {
-    font-size: .9em;
-  }
-
-  
-}
-
-@media (max-width: 608px) {
+@media (max-width: 710px) {
   label {
     font-size: .88em;
   }
 
   .collapsible p {
-    font-size: .8em;
+    font-size: .77em;
+  }
+}
+
+
+@media (max-width: 629px) {
+  label {
+    font-size: .85em;
+  }
+
+  .collapsible p {
+    font-size: .77em;
+  }
+   
+}
+
+
+@media (max-width: 616px) {
+  h1 {
+    font-size: .87rem;
+  }
+
+  label {
+    font-size: .85em;
+  }
+
+  .collapsible p {
+    font-size: .77em;
+  }
+}
+
+@media (max-width: 608px) {
+  h1 {
+    font-size: .87rem;
+  }
+
+  label {
+    font-size: .70em;
+  }
+
+  .collapsible p {
+    font-size: .75em;
   }
 }
 
 @media (max-width: 548px) {
   label {
-    font-size: .78em;
-  }
-
-  .collapsible p {
-    font-size: .78em;
-  }
-}
-
-@media (max-width: 484px) {
-  h1 {
-    font-size: .9rem;
-  }
-
-  label {
     font-size: .68em;
   }
 
   .collapsible p {
-    font-size: .70em;
+    font-size: .73em;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 494px) {
   h1 {
-    font-size: .60rem;
+    font-size: .7rem;
   }
 
   label {
-    font-size: .55em;
+    font-size: .62em;
+  }
+
+  .collapsible p {
+    font-size: .68em;
+  }
+}
+
+@media (max-width: 452px) {
+  h1 {
+    font-size: .70rem;
+  }
+
+  label {
+    font-size: .60em;
   }
 
   .collapsible p {
     font-size: .64em;
+  }
+}
+
+@media (max-width: 439px) {
+  h1 {
+    font-size: .55rem;
+  }
+
+  label {
+    font-size: .46em;
+  }
+
+  .collapsible p {
+    font-size: .58em;
+  }
+}
+
+@media (max-width: 361px) {
+  h1 {
+    font-size: .55rem;
+  }
+
+  label {
+    font-size: .48em;
+  }
+
+  .collapsible p {
+    font-size: .55em;
   }
 }
