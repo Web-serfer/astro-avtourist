@@ -10,6 +10,7 @@ export default defineConfig({
     // Example: Switch to use prism for syntax highlighting in Markdown
     syntaxHighlight: 'shiki'
   },
+  
   vite: {
     ssr: {
       external: ["svgo"]

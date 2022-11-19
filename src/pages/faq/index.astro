@@ -1,10 +1,68 @@
 ---
-import Layout from '../../layouts/Layout.astro'
+// import 'flowbite';
+import Layout from "../../layouts/Layout.astro";
 ---
 
-
 <Layout title="FAQ || Автоюрист Сургут">
-	<section class="section--page">
-		<h3>Страница  FAQ</h3>	
+  <section class="section--page">
+    <h2 class="text-lg text-center my-6 uppercase">  Наиболее частно возникающие вопросы у водителей</h2>		
+<div id="accordion-collapse" data-accordion="collapse">
+  <h2 id="accordion-collapse-heading-1">
+    <button type="button" class="flex items-center justify-between w-full p-5 font-small text-left bg-[#6482c2] text-gray-500 border border-b-0 border-gray-200 rounded-t-xl" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span class="text-base underline underline-offset-4">
+				1. Что делать если меня остановил испектор ГИБДД?</span>
+      <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+      <p class="mb-2 text-white dark:text-gray-400">На дороге возникает масса разнообразных ситуаций. Мы бы рекомендовали сохранить Наш номер телефона <a href="tel:+79222538375">+79222538375</a> и при необходимости немедленно консультироваться.</p>      
+    </div>
+  </div>
+	
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" class="flex items-center justify-between w-full p-5 font-small text-left bg-[#6482c2] text-gray-500 border border-b-0 border-gray-200 rounded-t-xl" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+      <span class="text-base underline underline-offset-4">
+				В отношении меня уже составлен административный протокол. Можно ли мне помочь ?
+			</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+      <p class="mb-2 text-white dark:text-gray-400">Для ответа на данный вопрос нам необходимо ознакомится с самим протоколом и материалами административного дела</p>
+    </div>
+  </div>
+  <h2 id="accordion-collapse-heading-3">
+    <button type="button" class="flex items-center justify-between w-full p-5 font-small text-left bg-[#6482c2] text-gray-500 border border-b-0 border-gray-200 rounded-t-xl" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+      <span class="text-base underline underline-offset-4">
+				Уже вынесено постановление по административному делу. Что можно сделать?
+			</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+    <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+      <p class="mb-2 text-white dark:text-gray-400">Даже в данном случае не все потеряно и можно помочь. Главное в такой ситуации не упустить время обжалования.</p>
+      
+    </div>
+  </div>
+	
+  
+</div> 
   </section>
 </Layout>
+
+<style>
+.title {
+		font-size: 1.5rem;
+	}
+</style>
+
+<script is:inline src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js" >
+	
+</script>
+
+
+
+

@@ -65,6 +65,10 @@ h1 {
   color: #fff;
 }
 
+a {
+  font-weight: 500;
+}
+
 small {
   font-size: var(--xsm);
 }
@@ -228,13 +232,7 @@ small {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
 
-  :root {
-    --xlg: 3.157rem;
-    --lg: 2.369rem;
-    --md: 1.777rem;
-    --sm: 1.333rem;
-    --xsm: 1rem;
-  }
+ 
 
   
 }
