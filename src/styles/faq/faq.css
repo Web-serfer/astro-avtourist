@@ -1,6 +1,7 @@
 
 .main {
   padding-top: 20px;
+  height: 100vh;
 }
 input[name='panel'] {
   display: none;
