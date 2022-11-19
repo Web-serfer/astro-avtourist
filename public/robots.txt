@@ -2,7 +2,6 @@ User-agent: *
 
 Disallow: /blog/
 Disallow: /documents/
-Disallow: /pdd/
 Disallow: /404.
 
 
