@@ -72,7 +72,7 @@ input[name='panel']:checked + .collapsible {
 
 @media (max-width: 608px) {
   label {
-    font-size: .85em;
+    font-size: .88em;
   }
 
   .collapsible p {
@@ -82,7 +82,7 @@ input[name='panel']:checked + .collapsible {
 
 @media (max-width: 548px) {
   label {
-    font-size: .75em;
+    font-size: .78em;
   }
 
   .collapsible p {
@@ -92,7 +92,7 @@ input[name='panel']:checked + .collapsible {
 
 @media (max-width: 484px) {
   label {
-    font-size: .65em;
+    font-size: .68em;
   }
 
   .collapsible p {
@@ -102,7 +102,7 @@ input[name='panel']:checked + .collapsible {
 
 @media (max-width: 426px) {
   label {
-    font-size: .55em;
+    font-size: .57em;
   }
 
   .collapsible p {
