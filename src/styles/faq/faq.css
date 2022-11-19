@@ -1,98 +1,110 @@
 
-
-/*Section used for centering process*/
-section--page {
-  width: 100%;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main {
+  padding-top: 20px;
 }
-
-.container{
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.accordion-item{
-  background-color: #6482c2;
-  border-radius: .4rem;
-}
-
-.accordion-item hr{
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.accordion-link{
-  font-size: 1.6rem;
-  color: rgba(255,255,255,.8);
-  text-decoration: none;
-  background-color: #425683;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-.accordion-link h3{
-  font-weight:500;
-  font-size: 20px;
-  text-align: center;
-}
-
-.accordion-link i{
-  color: #e7d5ff;
-  padding: .5rem;
-  
-}
-
-.accordion-link ul{
-  display:flex;
-  align-items: flex-end;
-  list-style-type: none;
-  margin-left: 25px;
-}
-
-.accordion-link li{
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  padding: 0 0 1px 5px;
-}
-
-.accordion-link div{
-  display: flex;
-}
-
-.accordion-link .ion-md-arrow-down{
+input[name='panel'] {
   display: none;
 }
 
-.answer{
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  /* background-color: #000; */
-  transition: max-height 650ms;
+label {
+  display: block;
+  padding: 0.8em;
+  width: 100%;
+  height: 2.5em;
+  border-bottom: 0.1em solid hsl(200, 96%, 80%);
+  background: #6482c2;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  cursor: pointer;
 }
 
 
-.answer p{
+label:hover {
+  background: #8ba6df;
+  cursor: pointer;
+}
+
+.collapsible {
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+  background: #292d2e;
+}
+
+.collapsible p {
+  padding-top: 10px;
   color: #fff;
-  font-size: 15px;
-  padding: 2rem;
+}
+
+
+input[name='panel'] + .collapsible {
+  overflow: hidden;
+  height: 0;
+
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+input[name='panel']:checked + .collapsible {
+  overflow: auto;
+  height: 100px; /* ширина поля ответа */
+}
+
+/* Media */
+
+@media (max-width: 634px) {
+  label {
+    font-size: .95em;
+  }
+
+  .collapsible p {
+    font-size: .9em;
+  }
+
   
 }
 
-.accordion-item:target .answer{
-  max-height: 20rem;
+@media (max-width: 608px) {
+  label {
+    font-size: .85em;
+  }
+
+  .collapsible p {
+    font-size: .8em;
+  }
 }
 
-.accordion-item:target .accordion-link .ion-md-arrow-forward{
-  display: none
+@media (max-width: 548px) {
+  label {
+    font-size: .75em;
+  }
+
+  .collapsible p {
+    font-size: .78em;
+  }
 }
 
-.accordion-item:target .accordion-link .ion-md-arrow-down{
-  display: block;
+@media (max-width: 484px) {
+  label {
+    font-size: .65em;
+  }
+
+  .collapsible p {
+    font-size: .70em;
+  }
+}
+
+@media (max-width: 426px) {
+  label {
+    font-size: .55em;
+  }
+
+  .collapsible p {
+    font-size: .64em;
+  }
 }
