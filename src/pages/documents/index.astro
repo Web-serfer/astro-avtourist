@@ -1,8 +1,46 @@
 ---
-import Layout from '../../layouts/Layout.astro'
+import "../../styles/doc/doc.css";
+import DocLayout from "../../layouts/DocLayout.astro";
+
+import EventPreview from '../../components/home/EventPreview.astro'
+
+import ArticlePreview from '../../components/home/ArticlePreview.astro'
+
+
+let docs = (await Astro.glob('../docs/*.{md,mdx}')).
+sort(
+	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
+);
+docs = docs.filter((doc) => !doc.frontmatter.draft);
+
+
+// let events = (await Astro.glob('./events/*.{md,mdx}')).sort(
+// 	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
+// );
+// events = events.filter((event) => !event.frontmatter.draft);
 ---
 
+<DocLayout title="FAQ || Автоюрист Сургут">
+  <div class="doc">
+		<h2 class="text-xl text-center pb-4 uppercase">Шаблоны документов для скачивания</h2>
+		<hr>
 
-<Layout title="Документы">
-	<h2>Страница в разработке</h2>
-</Layout>
+		<section class="section--page">		
+			<h3>Новый шаблон</h3>	
+			<!-- {events.map(event => (
+				<EventPreview frontmatter={event.frontmatter}  />
+			))} -->
+		</section>
+	
+		<section class="section--page">		
+			<h3>Скачать документы</h3>
+			{docs.map(doc => (
+				<ArticlePreview frontmatter={doc.frontmatter}  />
+			))}
+		</section>		
+	</div>
+</DocLayout>
+
+
+
+	
