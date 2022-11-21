@@ -44,9 +44,7 @@ input::placeholder {
 
 body {   
   background: #131415;
-  color: hsl(var(--text));
-  /* margin: var(--xlg) var(--lg); */
-  font-size: var(--xsm);
+  color: hsl(var(--text));  
 }
 
 .container {
