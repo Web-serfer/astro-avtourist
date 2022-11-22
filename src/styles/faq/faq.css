@@ -1,14 +1,16 @@
 
-.main {
+.faq {
   padding-top: 20px;
-  height: 100vh;
+  height: 100vh;  
 }
 
 h1  {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding-bottom: 20px;  
+  color: var(--secondaryTextColor);
+  letter-spacing: .1em;  
 }
 
 input[name='panel'] {

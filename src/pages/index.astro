@@ -7,7 +7,6 @@ import SocialsLinks from '../components/home/SocialsLinks.astro'
 
 import NewVideo from '../components/home/NewVideo.astro'
 
-// import Events from '../components/home/Events.astro'
 import EventPreview from '../components/home/EventPreview.astro'
 
 import ArticlePreview from '../components/home/ArticlePreview.astro'
@@ -37,16 +36,16 @@ events = events.filter((event) => !event.frontmatter.draft);
 	<section class="section--page">		
 		<h3>Новая статья</h3>	
 		{events.map(event => (
-			<EventPreview frontmatter={event.frontmatter} client:idle />
+			<EventPreview frontmatter={event.frontmatter}  />
 		))}
 	</section>
 
 	<section class="section--page">		
 		<h3>Последние статьи</h3>
 		{posts.map(post => (
-			<ArticlePreview frontmatter={post.frontmatter} client:idle />
+			<ArticlePreview frontmatter={post.frontmatter}  />
 		))}
 	</section>
-	<Video client:idle />
+	<Video />
 </Layout>
 

@@ -5,14 +5,29 @@ const navLinks = [
   {url: '/documents', title: 'Документы'},
   {url: '/faq', title: 'FAQ'}
 ]
+
+export interface Props {
+  src?: string;
+  
+}
+  
+const {
+  src = '/logo.png'
+  
+} = Astro.props;
+  
 ---
+
+
   
 
 <div class="navbar bg-[#18191a] py-6 sticky top-0">
     <a class="logo" href="/">
       <img 
         class="logo" 
-        src="/logo.png"
+        src={src}
+        width="50px"
+        height="50px"
         alt="Автоюрист Сургут" 
       />
     </a>
@@ -42,11 +57,7 @@ const navLinks = [
     justify-content: center;
     padding: 2em;
     box-shadow: var(--shadowBoxBottom);
-  }
-
-  .logo {
-    width: 50px;
-  }
+  }  
 
   ul{
     display: flex;     
