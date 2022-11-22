@@ -1,22 +1,20 @@
 ---
-const {frontmatter} = Astro.props;
-import { FileText, ArrowRight} from 'react-feather';
+const { frontmatter } = Astro.props;
+import { FileText, ArrowRight } from "react-feather";
 ---
 
 <a href={`/${frontmatter.slug}`}>
-    
-    <div class='card--article-preview'>
-      
-        <div class="article-preview__body">
-           <h3><FileText size={30}/></h3>
-            <div>
-              <strong>{frontmatter.title}</strong>
-              <br/>
-              <small>{frontmatter.descr}</small>              
-            </div>
-        </div>
-        <ArrowRight size={18}/>
+  <div class="card--article-preview">
+    <div class="article-preview__body">
+      <h3><FileText size={30} /></h3>
+      <div>
+        <strong>{frontmatter.title}</strong>
+        <br />       
+        <small>{frontmatter.descr} </small> 
+      </div>
     </div>
-  </a>
+    <ArrowRight size={18} />
+  </div>
+</a>
 
 

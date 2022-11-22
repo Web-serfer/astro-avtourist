@@ -92,8 +92,9 @@ li{
   height: 1px;
 }
 
-
-.card--article-preview{
+/* ====  Блок статей === */
+  
+.card--article-preview {
   display: flex;
   justify-content: space-between;
   gap: 1em;
@@ -102,25 +103,35 @@ li{
   border-bottom: 1px solid var(--mainBorderColor);
 }
 
-.card--article-preview strong{
+.card--article-preview strong {
+  font-size: 1rem;
   font-weight: 400;
 }
 
-.card--article-preview small{
-  font-weight: 100;
+.card--article-preview small {
+  font-style: italic;
+  
 }
 
-.article-preview__body{
+.article-preview__body {
   display: flex;
-
   align-items: center;
 }
 
-.article-preview__body > h3{
+.article-preview__body > h3 {
   margin-right: 0.5em;
   line-height: 0;
 }
 
+@media (max-width: 440px) {
+  .card--article-preview strong {
+    font-size: .95rem;
+    
+  }
+  
+}
+
+/*  */
 
 .astro-code{
   padding: 1em;
