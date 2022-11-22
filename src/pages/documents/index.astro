@@ -2,8 +2,6 @@
 import "../../styles/doc/doc.css";
 import DocLayout from "../../layouts/DocLayout.astro";
 
-import EventPreview from '../../components/home/EventPreview.astro'
-
 import ArticlePreview from '../../components/home/ArticlePreview.astro'
 
 
@@ -20,16 +18,13 @@ docs = docs.filter((doc) => !doc.frontmatter.draft);
 // events = events.filter((event) => !event.frontmatter.draft);
 ---
 
-<DocLayout title="FAQ || Автоюрист Сургут">
+<DocLayout title="Скачать документы || Автоюрист Сургут">
   <div class="doc">
 		<h2 class="text-xl text-center pb-4 uppercase">Шаблоны документов для скачивания</h2>
 		<hr>
 
 		<section class="section--page">		
-			<h3>Новый шаблон</h3>	
-			<!-- {events.map(event => (
-				<EventPreview frontmatter={event.frontmatter}  />
-			))} -->
+			<h3>Новый шаблон</h3>				
 		</section>
 	
 		<section class="section--page">		
