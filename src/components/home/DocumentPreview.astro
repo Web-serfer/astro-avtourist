@@ -1,0 +1,19 @@
+---
+const {frontmatter} = Astro.props;
+import { FileText, Download} from 'react-feather';
+---
+
+<a href={`/${frontmatter.slug}`}>
+    
+    <div class='card--article-preview'>
+      
+        <div class="article-preview__body pb-2">
+           <h3><FileText size={30}/></h3>
+            <div>
+              <strong>{frontmatter.title}</strong>                                   
+            </div>
+        </div>
+        <Download size={20}/>
+    </div>
+  </a>
+

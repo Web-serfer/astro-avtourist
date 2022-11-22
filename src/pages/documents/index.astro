@@ -1,9 +1,7 @@
 ---
-import "../../styles/doc/doc.css";
 import DocLayout from "../../layouts/DocLayout.astro";
 
-import ArticlePreview from '../../components/home/ArticlePreview.astro'
-
+import DocumentPreview from '../../components/home/DocumentPreview.astro'
 
 let docs = (await Astro.glob('../docs/*.{md,mdx}')).
 sort(
@@ -18,23 +16,43 @@ docs = docs.filter((doc) => !doc.frontmatter.draft);
 // events = events.filter((event) => !event.frontmatter.draft);
 ---
 
-<DocLayout title="Скачать документы || Автоюрист Сургут">
-  <div class="doc">
-		<h2 class="text-xl text-center pb-4 uppercase">Шаблоны документов для скачивания</h2>
-		<hr>
-
-		<section class="section--page">		
-			<h3>Новый шаблон</h3>				
-		</section>
+<DocLayout title="FAQ || Автоюрист Сургут">
+  <div class="doc px-4">
+		<h1 class="text-xl text-center pb-4 uppercase">Документы для скачивания</h1>
+		<hr>	
 	
-		<section class="section--page">		
-			<h3>Скачать документы</h3>
-			{docs.map(doc => (
-				<ArticlePreview frontmatter={doc.frontmatter}  />
-			))}
+		<section class="section py-4">
+			<span>
+				{docs.map(doc => (
+					<DocumentPreview frontmatter={doc.frontmatter}  />
+				))}
+			</span>				
 		</section>		
 	</div>
 </DocLayout>
+
+<style>
+	.doc {
+  padding-top: 20px;
+  height: 100vh;  
+}
+
+@media (max-width: 520px) {  
+  .doc h1 {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 360px) {  
+  .doc h1 {
+    font-size: 1.1rem;
+  }
+  .doc span {
+    font-size: .8rem;
+  }
+}
+</style>
 
 
 

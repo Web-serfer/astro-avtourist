@@ -1,6 +1,6 @@
 ---
 title: Ходатайство об отложении
-slug: my-first-document
+slug: hodatajstvo-ob-otlozhenii
 date: 19 ноября 2022
 author: Автоюрист
 descr: Ходатайство об отложении
