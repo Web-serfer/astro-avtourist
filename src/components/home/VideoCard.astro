@@ -28,7 +28,7 @@ const { title, subtitle } = Astro.props;
           alt="Новое видео"
         />
       </div>
-      <div>
+      <div class="video-card__descr">
         <p class="video-name">{title}</p>
         <small>{subtitle}</small>
       </div>
@@ -68,8 +68,7 @@ const { title, subtitle } = Astro.props;
 
   .video-name {
     color: var(--mainTextColor);
-    line-height: 1em;
-    margin: 0;
+    line-height: 1em;    
   }
 
   .video-info {
@@ -78,14 +77,16 @@ const { title, subtitle } = Astro.props;
 
   @media (max-width: 536px) {
     .video-card__header {
-      flex-direction:column;
-      align-items: center;
+      flex-direction:column; 
+      align-items: center;     
     }
     .video-img {
       margin-bottom: 15px;
+      margin-right: 0;
     }
-    .video-name {
-      font-size: .9em;
+    .video-card__descr {
+      
+      
     }
   }
 </style>
