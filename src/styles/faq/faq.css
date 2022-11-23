@@ -4,14 +4,13 @@
   height: 100vh;  
 }
 
-h2  {
+h1  {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 20px;  
   color: var(--secondaryTextColor);
-  letter-spacing: .1em;
-
+  letter-spacing: .1em;  
 }
 
 input[name='panel'] {

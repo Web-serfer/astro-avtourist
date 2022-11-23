@@ -5,23 +5,24 @@ import { Icon } from 'astro-icon'
 
 <a href={`/${frontmatter.slug}`}>
     
-    <div class='card--article-preview'>      
+    <div class='card--article-preview'>
+      
         <div class="article-preview__body pb-2">
            <h3>
             <Icon 
               pack="subway" 
               name="file-13" 
-              size={25} 
+              size={20} 
             />
           </h3>
-          <div>
-            <strong>{frontmatter.title}</strong>                                   
-          </div>
+            <div>
+              <strong>{frontmatter.title}</strong>                                   
+            </div>
         </div>        
         <Icon 
           pack="heroicons-outline" 
           name="download" 
-          size={25} 
+          size={20} 
         />
     </div>
   </a>

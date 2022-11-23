@@ -38,9 +38,15 @@ input::placeholder {
   --radius--sm: 5px;
   --radius--lg: 15px;
   --transition: all 160ms cubic-bezier(0.99, 0.03, 0.68, 0.93);
+
+  /* shadow */
+
+  /*--- Shadow ---*/
+  --shadowBoxBottom: 0px 5px 5px -3px rgba(214, 224, 232, 0.2);
+  --shadowBoxTop: 0px 5px 5px -3px rgba(214, 224, 232, 0.2) inset;
 }
 
-/* Styles blog */
+/* ==== Styles ==== */
 
 body {   
   background: #131415;
