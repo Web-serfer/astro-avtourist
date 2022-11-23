@@ -3,9 +3,22 @@ import newVideo from '../../images/home/newVideo.webp'
 import { Play } from 'react-feather'
 
 const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqhRr7XnzSa1aRdYBEAa&index=4'
+
+export interface Props {
+  heading?: string;
+  
+}
+  
+const {
+  heading = 'Новое видео'
+  
+} = Astro.props;
 ---
 
-<section class="section--page new-video">
+
+
+  
+<section class="section new-video">
   <div class='new-video-image-border'>
     <a href={href} target="_blank">
         <img 
@@ -16,7 +29,7 @@ const href = 'https://www.youtube.com/watch?v=pgFYEWsCezk&list=PLyUzx0zcVVwzwsqh
     </a>
   </div>
   <div class='new-video-body pb-4'>
-    <h2 class="py-4 underline underline-offset-8 decoration-dotted">Новое видео</h2>    
+    <h2 class="pb-4 underline underline-offset-8 decoration-dotted">{heading}</h2>    
     <a class='btn btn--md' href={href} target="_blank">
       <Play 
         width="16px" 
