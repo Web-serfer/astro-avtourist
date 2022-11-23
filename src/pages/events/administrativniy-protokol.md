@@ -1,10 +1,10 @@
 ---
 title: Административный протокол
-slug: administrativniy-protocol
+slug: administrativnyj-protokol
 date: 2022-11-4
-author: Автоюрист Сургут
-descr: Видео инструкция для водителей
-tags: [Протоколл]
+author: Автоюрист
+descr: Инструкция для водителей
+tags: [Протокол]
 order: 1
 hero: 
 draft: false
