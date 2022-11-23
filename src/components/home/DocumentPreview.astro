@@ -1,6 +1,6 @@
 ---
-const {frontmatter} = Astro.props;
-import { FileText, Download} from 'react-feather';
+const {frontmatter} = Astro.props
+import { Icon } from 'astro-icon'
 ---
 
 <a href={`/${frontmatter.slug}`}>
@@ -8,12 +8,22 @@ import { FileText, Download} from 'react-feather';
     <div class='card--article-preview'>
       
         <div class="article-preview__body pb-2">
-           <h3><FileText size={30}/></h3>
+           <h3>
+            <Icon 
+              pack="subway" 
+              name="file-13" 
+              size={20} 
+            />
+          </h3>
             <div>
               <strong>{frontmatter.title}</strong>                                   
             </div>
-        </div>
-        <Download size={20}/>
+        </div>        
+        <Icon 
+          pack="heroicons-outline" 
+          name="download" 
+          size={20} 
+        />
     </div>
   </a>
 

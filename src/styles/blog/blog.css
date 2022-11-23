@@ -40,7 +40,7 @@ input::placeholder {
   --transition: all 160ms cubic-bezier(0.99, 0.03, 0.68, 0.93);
 }
 
-
+/* Styles blog */
 
 body {   
   background: #131415;
@@ -54,6 +54,7 @@ body {
   max-width: 1400px;
   margin: auto;  
 }
+
 
 h1 {
   font-size: var(--lg);

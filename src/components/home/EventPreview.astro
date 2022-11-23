@@ -1,19 +1,25 @@
 ---
 const {frontmatter} = Astro.props;
-import { ArrowRight, Calendar} from 'react-feather';
+import { Icon } from 'astro-icon'
 ---
 
 <a href={`/${frontmatter.slug}`}>    
     <div class='card--article-preview'>      
         <div class="article-preview__body">          
-          <h3><Calendar size={30}/></h3>
+          <h3>
+            <Icon 
+              pack="mdi" 
+              name="comment-alert" 
+              size={20}
+            />
+          </h3>
             <div>
               <strong>{frontmatter.title}</strong>
               <br/>
               <small>{frontmatter.descr} </small>             
             </div>
         </div>
-        <ArrowRight size={18}/>
+        <Icon pack="mdi" name="arrow-right-thin" size={20} />
     </div>
   </a>
 
