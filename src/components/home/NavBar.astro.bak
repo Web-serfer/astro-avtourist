@@ -21,7 +21,7 @@ const {
 
   
 
-<header class="bg-[#18191a] py-6 sticky top-0">
+<div class="navbar bg-[#18191a] py-6 sticky top-0">
     <a class="logo" href="/">
       <img 
         class="logo" 
@@ -45,12 +45,12 @@ const {
         }                         
       </ul>
     </nav>          
-</header>
+</div>
 
 
 
 <style>
-  header {
+  .navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -65,7 +65,7 @@ const {
 
     
 
-  header a {
+  .navbar a {
     color:#adb0b1;
     font-size: 1em;
   } 
@@ -86,13 +86,13 @@ const {
       
     }
 
-    header a {
+    .navbar a {
       margin: 0 .5em;
       font-size: .9em;      
     }
 	}    
 
-  header a {
+  .navbar a {
     margin: 0 1em;
     text-transform: uppercase;
   }
@@ -104,7 +104,7 @@ const {
   }
 
   
-  header a:hover {
+  .navbar a:hover {
     color: var(--mainLinkColor-light);
     transition: all .5s ease 0s;
   }
