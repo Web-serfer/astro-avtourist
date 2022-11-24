@@ -67,7 +67,7 @@ input[name='panel'] + .collapsible {
 
 input[name='panel']:checked + .collapsible {
   overflow: auto;
-  height: 80px; /* ширина поля ответа */
+  height: 110px; /* ширина поля ответа */
 }
 
 /* Media */
@@ -79,7 +79,12 @@ input[name='panel']:checked + .collapsible {
 
   .collapsible p {
     font-size: .77em;
+  } 
+
+  input[name='panel']:checked + .collapsible {    
+    height: 80px; 
   }
+  
 }
 
 
