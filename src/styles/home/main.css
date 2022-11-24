@@ -82,7 +82,7 @@ li{
   margin: 0 auto;
 }
 
-.section--page{
+.section {
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -146,7 +146,7 @@ li{
 }
 
 
-code{
+code {
   background-color: #3d3d3d;
   padding: 2px 5px;
   border-radius: 5px;
