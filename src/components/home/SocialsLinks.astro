@@ -31,11 +31,16 @@ const {
     flex-wrap: wrap;    
 }
 
+
+@media (max-width: 767px) {
+  .menu--container {
+    margin-top: 20px;
+  }
+}
   .socials-links a {
     font-weight: 600;    
     text-transform: uppercase;
-    color: var(--secondaryTextColor);
-    font-size: 1em;
+    color: var(--secondaryTextColor);    
     transition: 0.3s;
     letter-spacing: .07em;
 }
@@ -43,12 +48,12 @@ const {
   .socials-links a:hover {
     font-weight: 100;
     color: var(--mainLinkColor-light);
-    font-size: 0.9em;
+    font-size: .8em;
 }
 
 @media (max-width: 390px) {
-  .socials-links a {
-    font-size: .80em;
+  .socials-links {
+    font-size: .75rem;
   }
 }
 </style>
