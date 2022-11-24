@@ -4,7 +4,8 @@
   border: 0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box; 
+   
 }
 
 input,
@@ -52,7 +53,8 @@ input::placeholder {
 
 body {   
   background: #131415;
-  color: hsl(var(--text));  
+  color: hsl(var(--text));
+  letter-spacing: .04em;   
 }
 
 .container-body {
