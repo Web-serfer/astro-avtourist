@@ -12,7 +12,7 @@ import FaqLayout from "../../layouts/FaqLayout.astro";
       Наиболее часто встречающиеся вопросы водителей  (FAQ)
     </h2>
 		<hr class="py-4">
-     <!-- Выборка из массива  -->
+     <!-- Import array faqs  -->
      {faqs.map(faq => (
         <label for={faq.label}>
           {faq.question}
