@@ -2,14 +2,22 @@
 // import "../../styles/faq/faq.css";
 import { faqs } from '../../data/faq.js'
 import FaqLayout from "../../layouts/FaqLayout.astro";
+
+export interface Props {
+  heading?: string;  
+}
+  
+const {
+  heading = 'Наиболее часто встречающиеся вопросы водителей  (FAQ)'  
+} = Astro.props;
+ 
 ---
 
-
+ 
 <FaqLayout title="FAQ || Автоюрист Сургут">
   <div class="faq">
-
     <h2 class="text-lg text-center pb-4 uppercase">
-      Наиболее часто встречающиеся вопросы водителей  (FAQ)
+      {heading}
     </h2>
 		<hr class="py-4">
      <!-- Import array faqs  -->
