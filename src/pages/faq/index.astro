@@ -1,61 +1,29 @@
 ---
 import "../../styles/faq/faq.css";
+import { faqs } from '../../data/faq.js'
 import FaqLayout from "../../layouts/FaqLayout.astro";
 ---
+
 
 <FaqLayout title="FAQ || Автоюрист Сургут">
   <div class="faq">
 
-    <h2 class="text-xl text-center pb-4 uppercase">Наиболее часто встречающиеся вопросы водителей  (FAQ)</h2>
-		<hr class="py-4">    
-    <label for="panel_1">
-      1. Остановил сотрудник ГИБДД. Что делать в такой ситуации ?
-    </label>
-    <input type="radio" name="panel" id="panel_1" />
+    <h2 class="text-base text-center pb-4 uppercase">
+      Наиболее часто встречающиеся вопросы водителей  (FAQ)
+    </h2>
+		<hr class="py-4">
+     <!-- Выборка из массива  -->
+     {faqs.map(faq => (
+        <label for={faq.label}>
+          {faq.question}
+        </label>
+    <input type="radio" name="panel" id={faq.id} />
     <div class="collapsible">
       <p>
-        Ситуации на дороге может быть множество. Я рекомендуем немедленно
-        позвонить <a href="tel:+79222538375">+79222538375</a> и описать обстановку.
-        Исходя из сложившихся обстоятельств Вы получите рекомендации к действию.
+        {faq.answer}
       </p>
     </div>
-    <label for="panel_2"
-      >2. Составили административный протокол. Что можно сделать ?</label
-    >
-
-    <input type="radio" name="panel" id="panel_2" />
-
-    <div class="collapsible">
-      <p>
-        Для ответа на данный вопрос необходимо ознакомиться с протоколом
-        установить доказательственную базу собранную инспектором ГИБДД. Звоните
-        поможем разобраться.
-      </p>
-    </div>
-    <label for="panel_3">
-      3. Суд вынес постановление по делу. Чем можете помочь ?
-    </label
-    >
-    <input type="radio" name="panel" id="panel_3" checked />
-    <div class="collapsible">
-      <p>
-        Для ответа на данный вопрос необходимо изучить постановление и после
-        этого будет сформирован четный план дельнейшего обжалования в
-        вышестоящий суд.
-      </p>
-    </div>
-    <!-- new -->
-
-    <label for="panel_4">
-      4. Сколько стоит консультация Автоюриста ?
-    </label
-    >
-    <input type="radio" name="panel" id="panel_4" checked />
-    <div class="collapsible">
-      <p>
-        По всем возникающим вопросам юридические консультации в области автоправа --- <span class="font-bold">БЕСПЛАТНЫ.</span>
-      </p>
-    </div>
+      ))}    
   </div>
 </FaqLayout>
 
