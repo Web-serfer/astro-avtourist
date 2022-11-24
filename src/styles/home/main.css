@@ -26,8 +26,7 @@
     --shadowBoxTop: 0px 5px 5px -3px rgba(214, 224, 232, 0.2) inset;
 }
 
-*{
-  font-family: 'Roboto Mono', monospace;
+*{  
   line-height: 1.8em;
   box-sizing: border-box;
   color: var(--mainTextColor);
