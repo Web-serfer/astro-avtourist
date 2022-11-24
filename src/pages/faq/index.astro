@@ -23,7 +23,7 @@ const {
      <!-- Import array faqs  -->
      {faqs.map(faq => (
         <label for={faq.label}>
-          {faq.question}
+          {faq.number} {faq.question}
         </label>
     <input type="radio" name="panel" id={faq.id} />
     <div class="collapsible">

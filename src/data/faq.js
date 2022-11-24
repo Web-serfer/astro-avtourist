@@ -1,5 +1,6 @@
 export const faqs = [
   {
+    number: '1.',
     label: 'panel_1',
     id: 'panel_1',
     question: 'Остановил сотрудник ГИБДД. Что делать в такой ситуации ?',
@@ -8,6 +9,7 @@ export const faqs = [
   },
 
   {
+    number: '2.',
     label: 'panel_2',
     id: 'panel_2',
     question: 'Составили административный протокол. Что можно сделать ?',
@@ -16,6 +18,7 @@ export const faqs = [
   },
 
   {
+    number: '3.',
     label: 'panel_3',
     id: 'panel_3',
     question: 'Суд вынес постановление по делу. Чем можете помочь ?',
@@ -24,6 +27,7 @@ export const faqs = [
   },
 
   {
+    number: '4.',
     label: 'panel_4',
     id: 'panel_4',
     question: 'Сколько стоит консультация Автоюриста ?',
