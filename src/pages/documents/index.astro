@@ -9,16 +9,20 @@ sort(
 );
 docs = docs.filter((doc) => !doc.frontmatter.draft);
 
+export interface Props {
+  heading?: string 
+}
+  
+const {
+  heading = 'Документы для скачивания'  
+} = Astro.props;
 
-// let events = (await Astro.glob('./events/*.{md,mdx}')).sort(
-// 	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
-// );
-// events = events.filter((event) => !event.frontmatter.draft);
 ---
+
 
 <DocLayout title="FAQ || Автоюрист Сургут">
   <div class="doc px-4">
-		<h1 class="text-xl text-center pb-4 uppercase">Документы для скачивания</h1>
+		<h1 class="text-xl text-center pb-4 uppercase">{heading}</h1>
 		<hr>	
 	
 		<section class="section py-4">

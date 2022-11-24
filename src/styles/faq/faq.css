@@ -67,7 +67,7 @@ input[name='panel'] + .collapsible {
 
 input[name='panel']:checked + .collapsible {
   overflow: auto;
-  height: 80px; /* ширина поля ответа */
+  height: 100px; /* ширина поля ответа */
 }
 
 /* Media */
