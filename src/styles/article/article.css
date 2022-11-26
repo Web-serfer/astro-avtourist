@@ -1,22 +1,28 @@
 p, li{
-    color: #fff;
-    font-weight: 100;
+  color: #fff;
+  font-weight: 100;
 }
 
 
 
-h2{
-    font-size: 26px;
+h2 {
+  font-size: 26px;
 }
 
-h3{
-    font-size: 22px;
+h3 {
+  font-size: 22px;
 }
 
-h4{
-    font-size: 18px;
+h4 {
+  font-size: 18px;
 }
 
 .article--container a {
-    color: #6482c2;
+  color: #6482c2;
+}
+
+@media (max-width: 767px) {
+  .menu--container {
+    margin-top: 20px;
+  }
 }

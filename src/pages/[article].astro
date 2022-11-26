@@ -1,6 +1,6 @@
 ---
-import ArticleLayout from '../layouts/ArticleLayout.astro';
-import { Calendar} from 'react-feather';
+import ArticleLayout from '../layouts/ArticleLayout.astro'
+import { Icon } from 'astro-icon'
 
 export async function getStaticPaths() {
     const articles = await Astro.glob('./posts/*.{md,mdx}')
@@ -20,19 +20,30 @@ const {Content, frontmatter} = Astro.props.article
 ---
 
 <ArticleLayout title={frontmatter.title}>    
-    
     {frontmatter.hero && 
     <img class="pt-8" src={frontmatter.hero}/>
     <br>
-    }    
-    <a class="author" href="/about">                 
-      автор: <span>{frontmatter.author}</span>
-    </a>    
-    <p class="date">
-      <Calendar size={30}/>
-        <span> Дата публикации: {frontmatter.date}</span>
-    </p>          
-    <h1 class="py-8">Тема: {frontmatter.title}</h1>
+    } 
+    <div class="flex justify-between items-center">
+      <p class="date">
+        <Icon 
+          pack="mdi" 
+          name="calendar-month" 
+          size={30} 
+        />        
+        <span>{frontmatter.date}</span>
+      </p>
+      <a class="author" href="#">                 
+      автор:&nbsp;<span>{frontmatter.author}</span>
+      </a>      
+    </div>
+    <div class="post-title my-6 flex items-baseline">
+      <span>Тема:&nbsp;&nbsp;</span>
+      <h1>
+        {frontmatter.title}
+      </h1>
+    </div>              
+    
     <Content/>    
 </ArticleLayout>
 
@@ -49,8 +60,106 @@ const {Content, frontmatter} = Astro.props.article
     font-style: italic;
   }
 
-  h1{
+  .post-title {
     font-size: 30px;
   }
+  
+  .post-title span {
+    text-transform: uppercase;
+    font-size: .5em;
+  }
+  
+  .post-title h1 {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @media(max-width: 719px) {
+    .post-title {
+        font-size: 25px;
+  }
+  
+    .post-title h1 {
+      font-size: 1em;   
+  }
+}
+
+  @media(max-width: 604px) {  
+    .post-title h1 {
+      font-size: .9em;   
+  }
+}
+
+  @media(max-width: 551px) {  
+    .post-title h1 {
+      font-size: .8em;   
+  }
+  
+}
+
+  @media(max-width: 500px) {  
+    .post-title h1 {
+      font-size: .7em;   
+  }
+}
+
+  @media(max-width: 447px) {  
+    .post-title h1 {
+      font-size: .65em;   
+  }
+  
+}
+
+@media(max-width: 421px) {  
+    .post-title h1 {
+      font-size: .6em;   
+  }
+  
+}
+
+@media(max-width: 395px) {  
+    .post-title h1 {
+      font-size: .55em;   
+  }
+  
+}
+
+
+
+
+@media(max-width: 375px) {  
+  .date span {
+      font-size: .8em;
+  }
+    .author {
+      font-size: .8em;
+    }
+    
+    .post-title h1 {
+      font-size: .5em; 
+      text-transform: uppercase;       
+  }
+  
+}
+
+
+  @media(max-width: 360px) { 
+    .date span {
+      font-size: .8em;
+  }
+    .author {
+      font-size: .8em;
+    }
+    
+    .post-title h1 {
+      font-size: .48em; 
+      text-transform: uppercase;  
+  }
+  
+}
+
+  
+  
+  
 </style>
 
