@@ -131,6 +131,11 @@ li{
   
 }
 
+.article-title :hover {
+  color: #6482c2;
+  transition: all .7s;
+}
+
 /*  */
 
 .astro-code{
