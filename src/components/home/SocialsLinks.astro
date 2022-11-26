@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon'
+
 export interface Props {
   yotube?: string;
   vk?: string;
@@ -16,9 +18,9 @@ const {
 
 
 <section class="section">
-  <div class="socials-links">
+  <div class="socials-links">    
     <a href="#" target="_blank">{youtube}</a>
-    <a href="#" target="_blank">{vk}</a>
+    <a href="#" target="_blank">{vk}</a>    
     <a href="tel:+79222538375">{phone}</a> 
   </div>
 </section>
