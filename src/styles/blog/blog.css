@@ -22,6 +22,7 @@ input::placeholder {
   --accent1: var(--hue) 43.6% 57.5%;
   --accent2: var(--hue) 71.4% 95.9%;
   --bkg: var(--hue) 100% 99.6%;
+
   /* box-shadows */
   --boxs-sm: 4px 6px 8px hsl(var(--accent1) / 14%),
     -3px 3px 18px 2px hsl(var(--accent1) / 12%),
@@ -29,12 +30,14 @@ input::placeholder {
   --boxs-lg: 0px 8px 10px hsl(var(--accent1) / 14%),
     0px 3px 14px 2px hsl(var(--accent1) / 12%),
     0px 5px 5px -3px hsl(var(--accent1) / 20%);
+
   /* sizing */
   --xlg: 2.369rem;
   --lg: 1.777rem;
   --md: 1.333rem;
   --sm: 1rem;
-  --xsm: 0.75rem;  
+  --xsm: 0.75rem; 
+
   /* misc */
   --radius--sm: 5px;
   --radius--lg: 15px;
@@ -56,6 +59,10 @@ body {
   color: hsl(var(--text));
   letter-spacing: .04em;   
 }
+
+.container {
+  padding: 1em;
+} 
 
 .container-body {
   display: grid;
@@ -236,12 +243,10 @@ small {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .post-container {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
-
- 
 
   
 }
