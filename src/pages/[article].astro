@@ -21,7 +21,7 @@ const {Content, frontmatter} = Astro.props.article
 
 <ArticleLayout title={frontmatter.title}>    
     {frontmatter.hero && 
-    <img class="pt-8" src={frontmatter.hero}/>
+    <img src={frontmatter.hero}/>
     <br>
     } 
     <div class="flex justify-between items-center">
