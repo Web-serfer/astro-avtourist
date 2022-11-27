@@ -75,16 +75,10 @@ Since heroku announced they are discontinuing their free teir in novermber of 20
 
 I've already made a few videos using Railway to host my postgres database and some Djano applications and I gotta say I'm never going back.
 
-> <a href="https://youtu.be/HEV1PWycOuQ" target="_blank">"Easiest Way To Connect Django To A Postgres Database"</a>
+<a href="https://youtu.be/HEV1PWycOuQ" target="_blank">"Easiest Way To Connect Django To A Postgres Database"</a>
 
 This venture backed organization just finalized a seed round where they raised over <a href="https://techcrunch.com/2022/05/31/railway-snags-20m-to-streamline-the-process-of-deploying-apps-and-services/" target="_blank">$20 million dollers!</a> And to add to that the lead investor was <a href="https://twitter.com/rauchg" target="_blank">Guillermo Rauch</a>, the CEO of Vercel. Having the backing from an investor of such a successful Tech company such as Vercel certainly tells me Railway is doing something right.
 
 Website: <a href="https://railway.app/">railway.app</a>
 
-<style>
-  h2 {
-    text-decoration: underline;
-    font-style: italic;
-  }
-</style>
   

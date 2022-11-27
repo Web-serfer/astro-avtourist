@@ -21,14 +21,14 @@ const {Content, frontmatter} = Astro.props.article
 
 <ArticleLayout title={frontmatter.title}>    
     {frontmatter.hero && 
-    <img src={frontmatter.hero}/>   
+    <img src={frontmatter.hero}/>    
     } 
     <div class="flex justify-between items-center mt-4">
       <p class="date flex items-center">
         <Icon 
           pack="mdi" 
           name="calendar-month" 
-          size={30} 
+          size={25} 
         />        
         <span>{frontmatter.date}</span>
       </p>
@@ -41,7 +41,8 @@ const {Content, frontmatter} = Astro.props.article
       <h1>
         {frontmatter.title}
       </h1>
-    </div>    
+    </div>              
+    
     <Content/>    
 </ArticleLayout>
 
@@ -49,7 +50,10 @@ const {Content, frontmatter} = Astro.props.article
   .author span{
     text-decoration: underline;
   }
- 
+
+  .date {
+    display: flex;    
+  }
   .date span {
     margin-left: 10px;
     font-style: italic;

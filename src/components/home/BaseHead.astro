@@ -1,0 +1,31 @@
+---
+import Favicons from '../../components/home/Favicons.astro'
+
+export interface Props {
+  description?: string;
+  keywords?: string;
+  canonical?: string;
+  title?: string;
+  
+}
+  
+const {
+  description = 'Автоюрист Сургута! Лишают прав? Попали в ДТП? Проблемы со Страховой? Звони +79222538375',
+  keywords = 'автоюрист сургут, автоюрист в сургуте, лучший автоюрист в сургуте, консультации по дтп в сургуте, консультация автоюриста в сургуте',
+  canonical = 'https://avtourist-surgut.ru',
+  title = 'Главная || Автоюрист Сургут' 
+} = Astro.props;
+  
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Favicons -->
+		<Favicons />
+      <!-- Description -->
+<meta name="description" content={description} />
+      <!-- Keywords -->
+<meta name="keywords" content={keywords} />
+		<!-- Canonical link -->
+<link rel="canonical" href={canonical}>
+<title>{title}</title>
