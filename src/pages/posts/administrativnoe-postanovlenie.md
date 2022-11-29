@@ -11,38 +11,38 @@ draft: false
 ---
 
 <details open>
-<summary><h2>Содержание</h2></summary>
-<ol>
-  <li>
-    <a href="#1">Понятие адм.постановления</a>  
-  </li>
-  <li>
-    <a href="#2">Классификация уголовных адвокатов</a>  
-  </li>
-  <li>
-    <a href="#3">Вступление в процесс уголовного адвоката</a> 
-  </li>
-  <li>
-  <a href="#4">Полномочия уголовного адвоката</a>  
-  </li>
-  <li>
-  <a href="#5">Уголовный адвокат по назначению</a>  
-  </li>
-  <li>
-  <a href="#6">Уголовный адвокат по соглашению</a>  
-  </li>
-  <li>
-  <a href="#7">Уголовный адвокат как психолог</a> 
-  </li>
-</ol>
+  <summary><h2>Содержание</h2></summary>
+  -------------------------------
+    <ol>
+      <li>
+        <a href="#">1. Понятие адм.постановления</a>  
+      </li>
+      <li>
+        <a href="#">2. Классификация уголовных адвокатов</a>  
+      </li>
+      <li>
+        <a href="#">3. Вступление в процесс уголовного адвоката</a> 
+      </li>
+      <li>
+      <a href="#">4. Полномочия уголовного адвоката</a>  
+      </li>
+      <li>
+      <a href="#">5. Уголовный адвокат по назначению</a>  
+      </li>
+      <li>
+      <a href="#">6. Уголовный адвокат по соглашению</a>  
+      </li>
+      <li>
+      <a href="#">7. Уголовный адвокат как психолог</a> 
+      </li>
+    </ol>
+    -------------------------------
 </details>
--------------------------------
-<br>
-<p>A collection of promising startups and projects I am watching this year. Some of these are companies with venture backed capital; and some are side projects, either way, I think everything on this list is pretty cool and worth a try</p>
-<br>
 
-## 1. Понятие административного постановления
-<br>
+<div class="body-post">
+  
+### 1. Понятие административного постановления
+
 <p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
 
 <img 
@@ -80,5 +80,4 @@ I've already made a few videos using Railway to host my postgres database and so
 This venture backed organization just finalized a seed round where they raised over <a href="https://techcrunch.com/2022/05/31/railway-snags-20m-to-streamline-the-process-of-deploying-apps-and-services/" target="_blank">$20 million dollers!</a> And to add to that the lead investor was <a href="https://twitter.com/rauchg" target="_blank">Guillermo Rauch</a>, the CEO of Vercel. Having the backing from an investor of such a successful Tech company such as Vercel certainly tells me Railway is doing something right.
 
 Website: <a href="https://railway.app/">railway.app</a>
-
-  
+</div>
