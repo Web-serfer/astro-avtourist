@@ -17,7 +17,7 @@ const { title, subtitle } = Astro.props;
 
   
 <a href={href} target="_blank">
-  <div class="video-card">
+  <div class="video-card shadow-white shadow-sm hover:shadow-lg">
     <div class="video-card__header">
       <div class="video-avatar__border">
         <img
@@ -43,11 +43,11 @@ const { title, subtitle } = Astro.props;
     border-radius: 10px;
     line-height: 1em;
     transition: 0.3s;
-    box-shadow: var(--shadowBoxBottom);
+    /* box-shadow: var(--shadowBoxBottom); */
   }
 
   .video-card:hover {
-    border-color: var(--mainLinkColor-light);
+    /* border-color: var(--mainLinkColor-light); */
     transition: all 0.5s ease 0s;
   }
 
