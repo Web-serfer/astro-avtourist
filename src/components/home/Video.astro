@@ -10,24 +10,23 @@ const {
 } = Astro.props;
 
 const videosData = [
-  {title: 'Видео 1', subtitle: 'Описание 1'},
-  {title: 'Видео 2', subtitle: 'Описание 2'},
-  {title: 'Видео 3', subtitle: 'Описание 3'},
-  {title: 'Видео 4', subtitle: 'Описание 4'},
-  {title: 'Видео 5', subtitle: 'Описание 5'},
-  {title: 'Видео 6', subtitle: 'Описание 6'}
+  {title: 'Тема 1'},
+  {title: 'Тема 2'},
+  {title: 'Тема 3'},
+  {title: 'Тема 4'},
+  {title: 'Тема 5'},
+  {title: 'Тема 6'}
 ];
 ---
 
 <section>
     <div id="video"></div>
-    <h3 class="underline underline-offset-8 decoration-dotted pb-4">{heading}</h3>    
+    <h3 class="underline underline-offset-8 decoration-dotted my-6">{heading}</h3>    
 
   <div id="video-wrapper"> 
     {videosData.map(video => (
         <VideoCard 
-          title={video.title}
-          subtitle={video.subtitle}
+            title={video.title}          
           /> 
       ))}       
   </div>
@@ -40,13 +39,19 @@ const videosData = [
   gap: 1em;
 }
 
-@media(max-width:800px) {
-  #video-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+@media(max-width: 800px) {
+  #video-wrapper{    
+    grid-template-columns: 1fr 1fr;    
   }
 }
+
+@media(max-width: 539px) {
+  #video-wrapper{    
+    grid-template-columns: 1fr;    
+  }
+}
+
+
 
 @media (max-width: 536px) {
   .py-4 {

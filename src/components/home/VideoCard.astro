@@ -11,7 +11,7 @@ const href =
   subtitle?: string;
 }
   
-const { title, subtitle } = Astro.props;
+const { title } = Astro.props;
 ---
 
 
@@ -29,8 +29,7 @@ const { title, subtitle } = Astro.props;
         />
       </div>
       <div>
-        <p class="video-name">{title}</p>
-        <small>{subtitle}</small>
+        <p class="video-name">{title}</p>        
       </div>
     </div>
   </div>
@@ -43,11 +42,10 @@ const { title, subtitle } = Astro.props;
     border-radius: 10px;
     line-height: 1em;
     transition: 0.3s;
-    /* box-shadow: var(--shadowBoxBottom); */
+    
   }
 
-  .video-card:hover {
-    /* border-color: var(--mainLinkColor-light); */
+  .video-card:hover {    
     transition: all 0.5s ease 0s;
   }
 
@@ -66,10 +64,17 @@ const { title, subtitle } = Astro.props;
     border: 2px solid var(--mainBorderColor);
   }
 
+
+  @media (max-width: 537px) {
+    .video-img {
+      margin-right: 0;
+    }
+  }
+  
+
   .video-name {
     color: var(--mainTextColor);
-    line-height: 1em;
-    margin: 0;
+    line-height: 1em;    
   }
 
   .video-info {
@@ -78,7 +83,7 @@ const { title, subtitle } = Astro.props;
 
   @media (max-width: 536px) {
     .video-card__header {
-      flex-direction:column;
+      flex-direction: column;
       align-items: center;
     }
     .video-img {
