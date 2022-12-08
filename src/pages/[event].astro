@@ -1,25 +1,125 @@
 ---
-import ArticleLayout from '../layouts/ArticleLayout.astro';
-
+import ArticleLayout from "../layouts/ArticleLayout.astro";
 
 export async function getStaticPaths() {
-    const events = await Astro.glob('./events/*.{md,mdx}')
-
-    return events.map(event => ({
-        params: {
-            event:event.frontmatter.slug
-        },
-        props: {
-            event
-        }
-    }))
+  const events = await Astro.glob("./events/*.{md,mdx}");
+  return events.map((event) => ({
+    params: {
+      event: event.frontmatter.slug,
+    },
+    props: {
+      event,
+    },
+  }));
 }
 
-const {Content, frontmatter} = Astro.props.event
+const { Content, frontmatter } = Astro.props.event;
 ---
 
 <ArticleLayout title={frontmatter.title}>
-    <img src={frontmatter.hero}/>
-    <h1>{frontmatter.title}</h1>
-    <Content/>
+  <img src={frontmatter.hero} />
+  <h1>{frontmatter.title}</h1>
+  <Content />
 </ArticleLayout>
+
+<style>
+  .author span {
+    text-decoration: underline;
+  }
+
+  .date {
+    display: flex;
+  }
+  .date span {
+    margin-left: 10px;
+    font-style: italic;
+  }
+
+  .post-title {
+    font-size: 30px;
+  }
+
+  .post-title span {
+    text-transform: uppercase;
+    font-size: 0.5em;
+  }
+
+  .post-title h1 {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @media (max-width: 719px) {
+    .post-title {
+      font-size: 25px;
+    }
+
+    .post-title h1 {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 604px) {
+    .post-title h1 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 551px) {
+    .post-title h1 {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .post-title h1 {
+      font-size: 0.7em;
+    }
+  }
+
+  @media (max-width: 447px) {
+    .post-title h1 {
+      font-size: 0.65em;
+    }
+  }
+
+  @media (max-width: 421px) {
+    .post-title h1 {
+      font-size: 0.6em;
+    }
+  }
+
+  @media (max-width: 395px) {
+    .post-title h1 {
+      font-size: 0.55em;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .date span {
+      font-size: 0.8em;
+    }
+    .author {
+      font-size: 0.8em;
+    }
+
+    .post-title h1 {
+      font-size: 0.5em;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .date span {
+      font-size: 0.8em;
+    }
+    .author {
+      font-size: 0.8em;
+    }
+
+    .post-title h1 {
+      font-size: 0.48em;
+      text-transform: uppercase;
+    }
+  }
+</style>

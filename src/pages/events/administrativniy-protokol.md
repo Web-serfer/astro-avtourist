@@ -10,14 +10,72 @@ hero:
 draft: false
 ---
 
+<details open>
+  <summary><h2>Содержание</h2></summary>
+  -------------------------------
+    <ol>
+      <li>
+        <a href="#">1. Понятие адм.протокола</a>  
+      </li>
+      <li>
+        <a href="#">2. Классификация адм. протоколов</a>  
+      </li>
+      <li>
+        <a href="#">3. Как читать адм. протокол</a> 
+      </li>
+      <li>
+      <a href="#">4. Как подписывать адм. протокол</a>  
+      </li>
+      <li>
+      <a href="#">5. Отказ от подписи адм. протокола</a>  
+      </li>
+      <li>
+      <a href="#">6. Административный протокол в суде</a>  
+      </li>
+      <li>
+      <a href="#">7. Выводы</a> 
+      </li>
+    </ol>
+    -------------------------------
+</details>
 
-A collection of promising startups and projects I am watching this year. Some of these are companies with venture backed capital; and some are side projects, either way, I think everything on this list is pretty cool and worth a try.
+<div class="body-post">
+  
+### 1. Понятие административного протокола
 
-### JSON Crack 
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
 
-Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure!
+### 2. Классификация административных протоколов
 
-<img src="./images/jsoncrack.png"/>
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+### 3. Как читать адм. протокол ?
+
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+### 4. Как подписывать адм. протокол ?
+
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+### 5. Отказ от подписи адм. протокола 
+
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+
+### 6. Административный протокол в суде 
+
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+### 7. Заключительные выводы 
+
+<p>Finally a way to visualize your JSON data structure! Not only can you paste in JSON data and see what it actially looks like, but you can provide endpoints to any API your building and see it output automatically. I'll be using JSON Crack in future tutorials thats for sure</p>
+
+<img 
+  class="py-8" 
+  src="./images/jsoncrack.png" 
+  alt="" 
+/>
+
 
 Website: <a href="https://jsoncrack.com/" target="_blank">jsoncrack.com</a>
 
@@ -29,7 +87,7 @@ Found project via <a href="https://www.linkedin.com/posts/vikasyadav94_vscode-pr
 Maybe it's just a cool looking feature without a practical use case, I don't know, but after seeing this <a href="https://www.linkedin.com/feed/update/urn:li:activity:6979199986219544576?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6979199986219544576%29" target_="blank">video</a> can you honestly say you're not impressed?
 
 
-<img src="./images/clipdrop.gif" />
+<img class='py-8' src="./images/clipdrop.gif" />
 
 
 I'll be looking more into this and seeing if it really is as cool as it seems.
@@ -43,8 +101,9 @@ Since heroku announced they are discontinuing their free teir in novermber of 20
 
 I've already made a few videos using Railway to host my postgres database and some Djano applications and I gotta say I'm never going back.
 
-> <a href="https://youtu.be/HEV1PWycOuQ" target="_blank">"Easiest Way To Connect Django To A Postgres Database"</a>
+<a href="https://youtu.be/HEV1PWycOuQ" target="_blank">"Easiest Way To Connect Django To A Postgres Database"</a>
 
 This venture backed organization just finalized a seed round where they raised over <a href="https://techcrunch.com/2022/05/31/railway-snags-20m-to-streamline-the-process-of-deploying-apps-and-services/" target="_blank">$20 million dollers!</a> And to add to that the lead investor was <a href="https://twitter.com/rauchg" target="_blank">Guillermo Rauch</a>, the CEO of Vercel. Having the backing from an investor of such a successful Tech company such as Vercel certainly tells me Railway is doing something right.
 
 Website: <a href="https://railway.app/">railway.app</a>
+</div>
