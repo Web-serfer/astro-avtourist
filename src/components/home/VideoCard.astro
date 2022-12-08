@@ -1,5 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
 import admin from "../../images/home/admin.webp";
 
 const href =
@@ -21,7 +20,7 @@ const { title } = Astro.props;
   <div class="video-card shadow-white shadow-sm hover:shadow-lg">
     <div class="video-card__header">
       <div class="video-avatar__border">
-        <Image
+        <img
           src={admin}
           class="video-img"
           width={60}

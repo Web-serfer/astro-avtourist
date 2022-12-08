@@ -1,5 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
 import newVideo from '../../images/home/newVideo.webp'
 import { Icon } from 'astro-icon'
 
@@ -21,7 +20,7 @@ const {
 <section class="section new-video">
   <div class='new-video-image-border'>
     <a href={href} target="_blank">
-      <Image
+      <img
         src={newVideo}
         class="new-video-image"
         width={692}
