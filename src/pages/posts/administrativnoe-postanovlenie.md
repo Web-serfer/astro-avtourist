@@ -3,7 +3,7 @@ title: Административное постановление
 slug: administrativnoe-postanovlenie
 date: 26 октября 2022
 author: Автоюрист
-descr: Правовая характеристика
+descr: Правовая характеристика администравного постановления
 tags: [Протокол]
 order: 4
 hero: ./images/foi-dashboard.jpg

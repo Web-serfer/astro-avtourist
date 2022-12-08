@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import admin from '../../images/home/admin.webp'
 
 export interface Props {
@@ -12,8 +13,16 @@ const {
 } = Astro.props;
 ---  
 
+
+
 <section class="wrapper--hero py-6" class="section">
-  <img class="admin" src={admin} alt="Автоюрист Сургут" width="150px" height="150px"/>
+  <Image
+    src={admin}
+    class="admin"
+    width={150}
+    height={150}
+    alt="Автоюрист Сургут"
+  />  
   <div>
     <h1 class="py-8">{heading}</h1>
     <p class="pr-2 text-base ">{text}</p>
